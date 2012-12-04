@@ -1,0 +1,53 @@
+#Prototype scanner file for SPM program
+#April 26, 2011
+#This file provides information on scan ranges and hysteresis correction coefficients for a tube scanner
+#Any lines preceded by a hash # are assumed to be comments and ignored.  
+#File structure is important!  Please pay attention to spacing between keywords!!
+
+#Please comment scanner files profusely
+#Note that scan ranges and hysteresis coefficients depend on temperatures, so that the temperature should also be specified
+#This scanner file is for a tube scanner at 300 K
+
+#Name of the scanner
+scanner: Attocube-Tube-1-300K
+
+#Z Piezo range in microns, and voltage required to obtain that range, in terms of DAC voltage, not high voltage amplifier output
+z piezo range: 2 20
+
+#Number of XY ranges.  After this, we have lines that specify the range in microns, and voltage span required to obtain that range
+number of xy ranges: 5
+range 1: 20 20
+range 2: 16 16
+range 3: 12 12
+range 4: 8  8
+range 5: 4 4
+
+#X range hysteresis coefficients that define an equation that gives X in terms of the DAC voltage V
+#A set of 4 coefficients for the equation X = A + B*V + C*V^2 + D*V^3, one each for sweeping up (- --> +) and down (+ --> -)
+#The number of ranges MUST be the same as the parameter above, otherwise we will get an error
+#Do not use "-" in the identifiers before the colon, as the program takes these as delimiters
+x hysteresis:
+1 up: 0.0 1.0 0.0 0.0
+1 down: 0.0 1.0 0.0 0.0
+2 up: 0.0 1.0 0.0 0.0
+2 down: 0.0 1.0 0.0 0.0
+3 up: 0.0 1.0 0.0 0.0
+3 down: 0.0 1.0 0.0 0.0
+4 up: 0.0 1.0 0.0 0.0
+4 down: 0.0 1.0 0.0 0.0
+5 up: 0.0 1.0 0.0 0.0
+5 down: 0.0 1.0 0.0 0.0
+
+#same thing for the y direction
+y hysteresis:
+1 up: 0.0 1.0 0.0 0.0
+1 down: 0.0 1.0 0.0 0.0
+2 up: 0.0 1.0 0.0 0.0
+2 down: 0.0 1.0 0.0 0.0
+3 up: 0.0 1.0 0.0 0.0
+3 down: 0.0 1.0 0.0 0.0
+4 up: 0.0 1.0 0.0 0.0
+4 down: 0.0 1.0 0.0 0.0
+5 up: 0.0 1.0 0.0 0.0
+5 down: 0.0 1.0 0.0 0.0
+

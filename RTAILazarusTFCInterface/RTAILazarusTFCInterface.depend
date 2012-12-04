@@ -1,0 +1,196 @@
+# depslib dependency file v1.0
+1349717991 source:/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<sys/io.h>
+	<math.h>
+	<rtai_lxrt.h>
+	<rtai_msg.h>
+	<rtai_comedi.h>
+	<rtai_spm.h>
+	<queue.c>
+
+1309379940 /usr/realtime/include/rtai_lxrt.h
+	<rtai_sched.h>
+	<rtai_nam2num.h>
+	<asm/rtai_lxrt.h>
+	<sys/types.h>
+	<sys/mman.h>
+	<sched.h>
+	<stdarg.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<asm/rtai_lxrt.h>
+	<pthread.h>
+	<unistd.h>
+	<sys/mman.h>
+
+1309379940 /usr/realtime/include/rtai_sched.h
+	<rtai.h>
+	<sys/time.h>
+	<time.h>
+	<errno.h>
+	<rtai_types.h>
+	<linux/time.h>
+	<linux/errno.h>
+	<linux/rbtree.h>
+	<linux/sched.h>
+
+1309379939 /usr/realtime/include/rtai.h
+	<linux/version.h>
+	<rtai_sanity.h>
+	<asm/rtai.h>
+
+1309379940 /usr/realtime/include/rtai_sanity.h
+
+1309379939 /usr/realtime/include/asm/rtai.h
+	<rtai_config.h>
+	<asm/rtai_hal.h>
+
+1309379939 /usr/realtime/include/rtai_config.h
+
+1309379939 /usr/realtime/include/asm/rtai_hal.h
+	<rtai_hal_names.h>
+	<asm/rtai_vectors.h>
+	<rtai_types.h>
+	<linux/sched.h>
+	<linux/interrupt.h>
+	<asm/desc.h>
+	<asm/system.h>
+	<asm/io.h>
+	<asm/rtai_atomic.h>
+	<asm/rtai_fpu.h>
+	<asm/fixmap.h>
+	<asm/apic.h>
+	<rtai_trace.h>
+	<linux/kernel.h>
+	<asm/rtai_oldnames.h>
+	<asm/rtai_emulate_tsc.h>
+
+1309379939 /usr/realtime/include/rtai_hal_names.h
+	<linux/version.h>
+
+1309379939 /usr/realtime/include/asm/rtai_vectors.h
+	<linux/version.h>
+	<rtai_hal_names.h>
+	<rtai_config.h>
+	<linux/interrupt.h>
+
+1309379940 /usr/realtime/include/rtai_types.h
+	<rtai_config.h>
+	<rtai_wrappers.h>
+
+1309379940 /usr/realtime/include/rtai_wrappers.h
+	<linux/version.h>
+	<linux/module.h>
+	<linux/moduleparam.h>
+	<linux/bitops.h>
+	<linux/device.h>
+	<linux/pid.h>
+
+1309379939 /usr/realtime/include/asm/rtai_atomic.h
+	<linux/bitops.h>
+	<asm/atomic.h>
+	<asm/system.h>
+
+1309379939 /usr/realtime/include/asm/rtai_fpu.h
+	<asm/processor.h>
+
+1309379940 /usr/realtime/include/rtai_trace.h
+	<rtai_types.h>
+	<linux/trace.h>
+
+1309379939 /usr/realtime/include/asm/rtai_oldnames.h
+	<linux/irq.h>
+
+1309379939 /usr/realtime/include/asm/rtai_emulate_tsc.h
+
+1309379940 /usr/realtime/include/rtai_nam2num.h
+	<rtai_types.h>
+
+1309379939 /usr/realtime/include/asm/rtai_lxrt.h
+	<linux/version.h>
+	<asm/rtai_vectors.h>
+	<asm/segment.h>
+	<asm/mmu_context.h>
+	<sys/syscall.h>
+	<unistd.h>
+
+1309379940 /usr/realtime/include/rtai_msg.h
+	<rtai_types.h>
+	<rtai_lxrt.h>
+
+1309379946 /usr/realtime/include/rtai_comedi.h
+	<rtai_types.h>
+	<rtai_sem.h>
+	<rtai_netrpc.h>
+	<linux/comedi.h>
+	<linux/comedilib.h>
+	<string.h>
+	<asm/rtai_lxrt.h>
+	<rtai_msg.h>
+	<rtai_shm.h>
+
+1309379940 /usr/realtime/include/rtai_sem.h
+	<rtai_types.h>
+	<rtai_nam2num.h>
+	<rtai_sched.h>
+	<linux/errno.h>
+	<rtai_lxrt.h>
+
+1309379940 /usr/realtime/include/rtai_netrpc.h
+	<rtai_config.h>
+	<rtai_registry.h>
+	<rtai_lxrt.h>
+	<rtai_sem.h>
+	<rtai_mbx.h>
+	<rtai_msg.h>
+	<rtai_sched.h>
+	<stdlib.h>
+	<stddef.h>
+
+1309379940 /usr/realtime/include/rtai_registry.h
+	<rtai_nam2num.h>
+	<rtai.h>
+
+1309379940 /usr/realtime/include/rtai_mbx.h
+	<rtai_sem.h>
+	<rtai_lxrt.h>
+
+1309379940 /usr/realtime/include/rtai_shm.h
+	<linux/module.h>
+	<linux/version.h>
+	<linux/vmalloc.h>
+	<linux/mm.h>
+	<linux/wrapper.h>
+	<linux/mm.h>
+	<rtai.h>
+	<rtai_malloc.h>
+	<fcntl.h>
+	<unistd.h>
+	<sys/mman.h>
+	<sys/ioctl.h>
+	<rtai_lxrt.h>
+
+1309379940 /usr/realtime/include/rtai_malloc.h
+	<rtai_types.h>
+	<linux/kernel.h>
+	<linux/list.h>
+	<linux/spinlock.h>
+
+1326127282 /home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface//rtai_spm.h
+
+1323185889 /home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface//queue.c
+	<stdio.h>
+	<errno.h>
+	<stdlib.h>
+
+1323185889 source:/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/queue.c
+	<stdio.h>
+	<errno.h>
+	<stdlib.h>
+

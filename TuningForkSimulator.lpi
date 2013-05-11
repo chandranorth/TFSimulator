@@ -1,17 +1,19 @@
 <?xml version="1.0"?>
 <CONFIG>
   <ProjectOptions>
-    <Version Value="7"/>
+    <Version Value="9"/>
     <General>
       <MainUnit Value="0"/>
-      <TargetFileExt Value=""/>
-      <Icon Value="0"/>
       <UseXPManifest Value="True"/>
-      <ActiveEditorIndexAtStart Value="0"/>
+      <Icon Value="0"/>
+      <ActiveWindowIndexAtStart Value="0"/>
     </General>
     <VersionInfo>
-      <ProjectVersion Value=""/>
+      <StringTable ProductVersion=""/>
     </VersionInfo>
+    <BuildModes Count="1">
+      <Item1 Name="default" Default="True"/>
+    </BuildModes>
     <PublishOptions>
       <Version Value="2"/>
       <IgnoreBinaries Value="False"/>
@@ -42,267 +44,284 @@
         <Filename Value="TuningForkSimulator.lpr"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="TuningForkSimulator"/>
-        <CursorPos X="1" Y="23"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="1"/>
-        <UsageCount Value="170"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="23"/>
+        <UsageCount Value="182"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit0>
       <Unit1>
         <Filename Value="mainform.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="TuningForkForm"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="MainForm"/>
-        <CursorPos X="103" Y="6"/>
-        <TopLine Value="1"/>
+        <IsVisibleTab Value="True"/>
         <EditorIndex Value="0"/>
-        <UsageCount Value="170"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="259"/>
+        <CursorPos X="39" Y="281"/>
+        <UsageCount Value="182"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <LoadedDesigner Value="True"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit1>
       <Unit2>
         <Filename Value="daq_comedi_functions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="daq_comedi_functions"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="2"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit2>
       <Unit3>
         <Filename Value="daq_comedi_types.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="daq_comedi_types"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="3"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit3>
       <Unit4>
         <Filename Value="daqfunctions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="DAQFunctions"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="4"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit4>
       <Unit5>
         <Filename Value="globalfunctions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="globalfunctions"/>
-        <CursorPos X="20" Y="33"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="5"/>
-        <UsageCount Value="152"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="7"/>
+        <CursorPos X="20" Y="33"/>
+        <UsageCount Value="164"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit5>
       <Unit6>
         <Filename Value="globalvariables.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="globalvariables"/>
-        <CursorPos X="4" Y="22"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="6"/>
-        <UsageCount Value="152"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="4" Y="22"/>
+        <UsageCount Value="164"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit6>
       <Unit7>
         <Filename Value="rtai_comedi.tmp.h"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="7"/>
-        <UsageCount Value="85"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="91"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="C++"/>
+        <DefaultSyntaxHighlighter Value="C++"/>
       </Unit7>
       <Unit8>
         <Filename Value="rtai_comedi_functions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="rtai_comedi_functions"/>
-        <CursorPos X="27" Y="4"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="8"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="27" Y="4"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit8>
       <Unit9>
         <Filename Value="rtai_comedi_types.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="rtai_comedi_types"/>
-        <CursorPos X="3" Y="67"/>
-        <TopLine Value="45"/>
         <EditorIndex Value="9"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="38"/>
+        <CursorPos X="115" Y="55"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit9>
       <Unit10>
         <Filename Value="rtai_functions.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="rtai_functions"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="10"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="3" Y="5"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit10>
       <Unit11>
         <Filename Value="rtai_types.pas"/>
         <IsPartOfProject Value="True"/>
         <UnitName Value="rtai_types"/>
-        <CursorPos X="1" Y="1"/>
-        <TopLine Value="1"/>
         <EditorIndex Value="11"/>
-        <UsageCount Value="144"/>
+        <WindowIndex Value="0"/>
+        <TopLine Value="1"/>
+        <CursorPos X="1" Y="1"/>
+        <UsageCount Value="156"/>
         <Loaded Value="True"/>
-        <SyntaxHighlighter Value="Delphi"/>
+        <DefaultSyntaxHighlighter Value="Delphi"/>
       </Unit11>
     </Units>
     <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
         <Filename Value="mainform.pas"/>
-        <Caret Line="311" Column="1" TopLine="295"/>
+        <Caret Line="295" Column="2" TopLine="270"/>
       </Position1>
       <Position2>
         <Filename Value="mainform.pas"/>
-        <Caret Line="241" Column="38" TopLine="213"/>
+        <Caret Line="296" Column="2" TopLine="271"/>
       </Position2>
       <Position3>
         <Filename Value="mainform.pas"/>
-        <Caret Line="236" Column="14" TopLine="221"/>
+        <Caret Line="297" Column="2" TopLine="272"/>
       </Position3>
       <Position4>
         <Filename Value="mainform.pas"/>
-        <Caret Line="273" Column="63" TopLine="270"/>
+        <Caret Line="335" Column="1" TopLine="332"/>
       </Position4>
       <Position5>
         <Filename Value="mainform.pas"/>
-        <Caret Line="115" Column="36" TopLine="79"/>
+        <Caret Line="442" Column="1" TopLine="442"/>
       </Position5>
       <Position6>
         <Filename Value="mainform.pas"/>
-        <Caret Line="348" Column="34" TopLine="305"/>
+        <Caret Line="430" Column="5" TopLine="410"/>
       </Position6>
       <Position7>
         <Filename Value="mainform.pas"/>
-        <Caret Line="374" Column="3" TopLine="328"/>
+        <Caret Line="91" Column="49" TopLine="78"/>
       </Position7>
       <Position8>
         <Filename Value="mainform.pas"/>
-        <Caret Line="368" Column="64" TopLine="335"/>
+        <Caret Line="441" Column="34" TopLine="430"/>
       </Position8>
       <Position9>
         <Filename Value="mainform.pas"/>
-        <Caret Line="264" Column="48" TopLine="234"/>
+        <Caret Line="145" Column="5" TopLine="145"/>
       </Position9>
       <Position10>
         <Filename Value="mainform.pas"/>
-        <Caret Line="282" Column="38" TopLine="256"/>
+        <Caret Line="500" Column="31" TopLine="494"/>
       </Position10>
       <Position11>
         <Filename Value="mainform.pas"/>
-        <Caret Line="276" Column="24" TopLine="262"/>
+        <Caret Line="280" Column="3" TopLine="267"/>
       </Position11>
       <Position12>
         <Filename Value="mainform.pas"/>
-        <Caret Line="283" Column="20" TopLine="268"/>
+        <Caret Line="327" Column="1" TopLine="309"/>
       </Position12>
       <Position13>
-        <Filename Value="mainform.pas"/>
-        <Caret Line="423" Column="44" TopLine="396"/>
+        <Filename Value="rtai_comedi_types.pas"/>
+        <Caret Line="61" Column="3" TopLine="54"/>
       </Position13>
       <Position14>
         <Filename Value="mainform.pas"/>
-        <Caret Line="384" Column="43" TopLine="376"/>
+        <Caret Line="434" Column="50" TopLine="415"/>
       </Position14>
       <Position15>
         <Filename Value="mainform.pas"/>
-        <Caret Line="380" Column="39" TopLine="372"/>
+        <Caret Line="496" Column="12" TopLine="482"/>
       </Position15>
       <Position16>
         <Filename Value="mainform.pas"/>
-        <Caret Line="334" Column="38" TopLine="331"/>
+        <Caret Line="104" Column="43" TopLine="91"/>
       </Position16>
       <Position17>
         <Filename Value="mainform.pas"/>
-        <Caret Line="345" Column="38" TopLine="343"/>
+        <Caret Line="145" Column="37" TopLine="75"/>
       </Position17>
       <Position18>
         <Filename Value="mainform.pas"/>
-        <Caret Line="347" Column="38" TopLine="343"/>
+        <Caret Line="499" Column="6" TopLine="494"/>
       </Position18>
       <Position19>
         <Filename Value="mainform.pas"/>
-        <Caret Line="291" Column="28" TopLine="278"/>
+        <Caret Line="352" Column="23" TopLine="349"/>
       </Position19>
       <Position20>
         <Filename Value="mainform.pas"/>
-        <Caret Line="262" Column="39" TopLine="244"/>
+        <Caret Line="133" Column="4" TopLine="117"/>
       </Position20>
       <Position21>
         <Filename Value="mainform.pas"/>
-        <Caret Line="415" Column="43" TopLine="277"/>
+        <Caret Line="145" Column="42" TopLine="131"/>
       </Position21>
       <Position22>
         <Filename Value="mainform.pas"/>
-        <Caret Line="301" Column="29" TopLine="282"/>
+        <Caret Line="277" Column="11" TopLine="264"/>
       </Position22>
       <Position23>
         <Filename Value="mainform.pas"/>
-        <Caret Line="405" Column="107" TopLine="391"/>
+        <Caret Line="278" Column="45" TopLine="264"/>
       </Position23>
       <Position24>
         <Filename Value="mainform.pas"/>
-        <Caret Line="265" Column="40" TopLine="257"/>
+        <Caret Line="425" Column="66" TopLine="411"/>
       </Position24>
       <Position25>
         <Filename Value="mainform.pas"/>
-        <Caret Line="334" Column="44" TopLine="317"/>
+        <Caret Line="426" Column="58" TopLine="411"/>
       </Position25>
       <Position26>
         <Filename Value="mainform.pas"/>
-        <Caret Line="406" Column="3" TopLine="404"/>
+        <Caret Line="147" Column="65" TopLine="126"/>
       </Position26>
       <Position27>
         <Filename Value="mainform.pas"/>
-        <Caret Line="405" Column="3" TopLine="404"/>
+        <Caret Line="146" Column="25" TopLine="107"/>
       </Position27>
       <Position28>
         <Filename Value="mainform.pas"/>
-        <Caret Line="269" Column="125" TopLine="263"/>
+        <Caret Line="147" Column="54" TopLine="133"/>
       </Position28>
       <Position29>
-        <Filename Value="TuningForkSimulator.lpr"/>
-        <Caret Line="4" Column="3" TopLine="1"/>
+        <Filename Value="mainform.pas"/>
+        <Caret Line="146" Column="25" TopLine="132"/>
       </Position29>
       <Position30>
-        <Filename Value="mainform.pas"/>
-        <Caret Line="380" Column="109" TopLine="331"/>
+        <Filename Value="rtai_comedi_types.pas"/>
+        <Caret Line="62" Column="73" TopLine="61"/>
       </Position30>
     </JumpHistory>
   </ProjectOptions>
   <CompilerOptions>
-    <Version Value="8"/>
+    <Version Value="11"/>
     <SearchPaths>
-      <IncludeFiles Value="$(ProjOutDir)/"/>
-      <Libraries Value="/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/bin/Release/;/home/chandra/LazarusPrograms/Graph Components/BGRABitmap/lib/i386-linux/;/usr/local/lib/;/usr/realtime/lib/"/>
+      <IncludeFiles Value="$(ProjOutDir)"/>
+      <Libraries Value="/home/chandra/LazarusPrograms/Graph Components/BGRABitmap/lib/i386-linux/;/usr/local/lib/;/usr/realtime/lib/;RTAILazarusTFCInterface/bin/Release"/>
     </SearchPaths>
     <Parsing>
       <SyntaxOptions>
         <SyntaxMode Value="Delphi"/>
+        <UseAnsiStrings Value="False"/>
       </SyntaxOptions>
     </Parsing>
     <CodeGeneration>
@@ -312,9 +331,8 @@
         <OverflowChecks Value="True"/>
         <StackChecks Value="True"/>
       </Checks>
-      <VerifyObjMethodCallValidity Value="True"/>
       <TargetCPU Value="x86_64"/>
-      <TargetOS Value="Linux"/>
+      <TargetOS Value="linux"/>
     </CodeGeneration>
     <Linking>
       <LinkSmart Value="True"/>

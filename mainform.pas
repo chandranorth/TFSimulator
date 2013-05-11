@@ -22,6 +22,12 @@ type
 
   TTuningForkForm = class(TForm)
     AmpGainSpinEdit: TSpinEdit;
+    EFMCheckBox: TCheckBox;
+    EFMGroupBox: TGroupBox;
+    Label13: TLabel;
+    TipRadiusSpinEdit: TFloatSpinEdit;
+    TipVoltageSpinEdit: TFloatSpinEdit;
+    Label4: TLabel;
     StartSimulatorBtn: TButton;
     FastTimer: TEpikTimer;
     OutputSignalOutputLabel: TLabel;
@@ -82,6 +88,7 @@ type
     procedure CenteredAtSpinEditChange(Sender: TObject);
     procedure ControlSignalSpinEditChange(Sender: TObject);
     procedure DataTimerTimer(Sender: TObject);
+    procedure EFMCheckBoxClick(Sender: TObject);
     procedure ExternalScanCheckBoxClick(Sender: TObject);
     procedure HeightSpinEditChange(Sender: TObject);
     procedure InputControlComboBoxSelect(Sender: TObject);
@@ -95,10 +102,11 @@ type
     procedure SizeofFeatureSpinEditChange(Sender: TObject);
     procedure StartSimulatorBtnClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
-    procedure TestControlCheckBoxChange(Sender: TObject);
     procedure TestControlCheckBoxClick(Sender: TObject);
     procedure TFForceConstEditKeyPress(Sender: TObject; var Key: char);
     procedure TFFreqEditKeyPress(Sender: TObject; var Key: char);
+    procedure TipRadiusSpinEditChange(Sender: TObject);
+    procedure TipVoltageSpinEditChange(Sender: TObject);
     procedure XChannelComboBoxSelect(Sender: TObject);
     procedure XPositionSpinEditChange(Sender: TObject);
     procedure YChannelComboBoxSelect(Sender: TObject);
@@ -124,6 +132,7 @@ var
    x_0        : double;
    TFForceConstant,
    TFBaseFrequency        : double;
+   delta_f0 : double; //frequency shift from far away to minimum of Freq_shift(x)
 
  type
   tc = class(TThread)
@@ -135,7 +144,9 @@ var
 
   procedure UpdateFrequencyParameters;
   begin
-    LJ_FreqShiftMultFact:= 1.605*intpower(x_0,14);
+    LJ_FreqShiftMultFact:= 1.605*delta_f0*intpower(x_0,14);
+    EFM_FreqShiftMultFact:=1.8908E16*TipRadius*TipRadius*TipVoltage*TipVoltage*
+                             (TFBaseFrequency/TFForceConstant);
   end;
 
 { TTuningForkForm }
@@ -263,15 +274,26 @@ begin
   TestControlCheckBox.Checked:=FALSE;
   ControlSignalSpinEdit.Enabled:=FALSE;
 
+  EFM_Mode:=0; //False
+  EFMCheckBox.Checked:=FALSE;
+  TipRadius:=20; // in nm
+  TipVoltage:=0; // in volts
+  TipRadiusSpinEdit.Value:=TipRadius;
+  TipVoltageSpinEdit.Value:=TipVoltage;
+
   ExternalScan:=0; //False
   ExternalScanCheckBox.Checked:=FALSE;
 
-  FrequencyShift:=3; //maximum frequency shift, in Hz
-  MaxFreqShiftEdit.Text:=FloatToStr(FrequencyShift);
+  delta_f0:=3; //maximum frequency shift, in Hz
+  MaxFreqShiftEdit.Text:=FloatToStr(delta_f0);
 
   x_0:=2; //distance for mininum in LJ potential, in nm
   x_06:=intpower(x_0, 6);
   LJPlotMinEdit.Text:=FloatToStr(x_0);
+
+  EFM_Mode:=0; //Not in EFM Mode
+  TipRadius:= 20; //in nanometers
+  TipVoltage:=0;
 
   TFForceConstant:=1800; //Tuning fork force constant, in N/m
   TFForceConstEdit.Text:=FloatToStr(TFForceConstant);
@@ -311,17 +333,13 @@ begin
 
 
   //allow nonroot access
-  rt_allow_nonroot_hrt;
-  //start the main task as a soft real time task with a priority of 10, higher
+  //rt_allow_nonroot_hrt;
+  //start the maitask as a soft real time task with a priority of 10, higher
   //than any other real-time task
-  GlobalTaskStarted:=StartMainTask(10);
+  GlobalTaskStarted:=StartMainTask(1);
   //SysConfig.Show;
 end;
 
-procedure TTuningForkForm.TestControlCheckBoxChange(Sender: TObject);
-begin
-
-end;
 
 procedure TTuningForkForm.TestControlCheckBoxClick(Sender: TObject);
 begin
@@ -342,12 +360,32 @@ end;
 procedure TTuningForkForm.TFForceConstEditKeyPress(Sender: TObject;
   var Key: char);
 begin
-  if Key=Chr(13) then TFForceConstant:=StrToFloat(TFForceConstEdit.Text);
+  if Key=Chr(13) then
+    begin
+     TFForceConstant:=StrToFloat(TFForceConstEdit.Text);
+     UpdateFrequencyParameters;
+    end;
 end;
 
 procedure TTuningForkForm.TFFreqEditKeyPress(Sender: TObject; var Key: char);
 begin
-  if Key=Chr(13) then TFBaseFrequency:=StrToFloat(TFFreqEdit.Text);
+  if Key=Chr(13) then
+    begin
+      TFBaseFrequency:=StrToFloat(TFFreqEdit.Text);
+      UpdateFrequencyParameters;
+    end;
+end;
+
+procedure TTuningForkForm.TipRadiusSpinEditChange(Sender: TObject);
+begin
+  TipRadius:=TipRadiusSpinEdit.Value;
+  UpdateFrequencyParameters;
+end;
+
+procedure TTuningForkForm.TipVoltageSpinEditChange(Sender: TObject);
+begin
+  TipVoltage:=TipVoltageSpinEdit.Value;
+  UpdateFrequencyParameters;
 end;
 
 procedure TTuningForkForm.XChannelComboBoxSelect(Sender: TObject);
@@ -421,6 +459,22 @@ begin
    TubeDisplacementLabel.Caption:='Tube displacement (nm): ' + FloatToStr(TubeDisplacement);
 end;
 
+procedure TTuningForkForm.EFMCheckBoxClick(Sender: TObject);
+begin
+  if EFM_Mode = 0 then //we are not in EFM mode
+    begin
+       EFM_Mode:=1;
+       EFMCheckBox.Checked:=TRUE;
+    end
+   else
+    begin
+      EFM_Mode:=0;
+      EFMCheckBox.Checked:=FALSE;
+    end;
+end;
+
+
+
 procedure TTuningForkForm.ExternalScanCheckBoxClick(Sender: TObject);
 begin
   if ExternalScan=0 then //we are not on external scan
@@ -471,7 +525,11 @@ end;
 procedure TTuningForkForm.MaxFreqShiftEditKeyPress(Sender: TObject;
   var Key: char);
 begin
-  if Key=Chr(13) then FrequencyShift:=StrToFloat(MaxFreqShiftEdit.Text);
+  if Key=Chr(13) then
+    begin
+     delta_f0:=StrToFloat(MaxFreqShiftEdit.Text);
+     UpdateFrequencyParameters;
+    end;
 end;
 
 procedure TTuningForkForm.OutputAddVoltEditKeyPress(Sender: TObject;

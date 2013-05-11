@@ -45,6 +45,7 @@
 			<Add option="-pthread" />
 			<Add directory="/usr/realtime/include" />
 			<Add directory="/usr/realtime/bin" />
+			<Add directory="/usr/src/linux/include" />
 		</Compiler>
 		<Linker>
 			<Add library="pthread" />

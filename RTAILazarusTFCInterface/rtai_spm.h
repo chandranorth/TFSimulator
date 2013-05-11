@@ -10,11 +10,16 @@ typedef struct  {
     int channel;
 }  Acquisition_channel;
 
+#define TRUE 1
+#define FALSE 0
+#define TimerTime 50000 //Minimum time of timer, for rt_start_timer()
+
 volatile RTIME sample_time;
+static RTIME timer_interval;  //timer interval for rt_start_timer
+volatile int hard_timer_running = TRUE; //flag to check if hard timer is running.  Set initially to TRUE (1, not 0)
 
 volatile Acquisition_channel AnalogOutputChannel; //Channel for a test sine wave outpu
 volatile Acquisition_channel AnalogInputChannel; //Channel for a test sine wave outpu
-volatile int hard_timer_running =1; //flag to check if hard timer is running.  Set initially to FALSE (1, not 0)
 static RTIME sampling_interval;
 volatile int AmplifierGainSign =-1;//Sign of the Amplifier Gain on the z axis
 volatile double MaxZVoltage =-10;//manan changed it so that Max is 10 and Min is -10
@@ -56,14 +61,19 @@ volatile Acquisition_channel InputChannel; //Channel for reading the control sig
 volatile Acquisition_channel OutputChannel; //Channel for sending out the response
 volatile Acquisition_channel XChannel; //Channel that determines the scan x position
 volatile Acquisition_channel YChannel; //Channel that determines the scan y position
+
 volatile int TFParametersChanged =1; //Flag to signal that TF parameters have changed
 volatile int TestControlSignal = 1; //Set to False if using InputChannel to determine distance
 volatile int ExternalScan =1; //Set to False if not scanning
+volatile int EFM_Mode = 0; //Set to False if not using EFM
 volatile double LJ_FreqShiftMultFact; //Factor to multiply to calculate frequency shift, essentially 12A
+volatile double EFM_FreqShiftMultFact; //Factor to determine Frequency shift due to EFM
 volatile double x_06; //x_0 raised to the power 6, calculated by main program
 volatile double ControlMultFact; //Factor to multiply control signal by, to convert it to nm
 volatile double ControlAddFact; //Factor to add to control signal
 volatile double TubeDisplacement; //Resulting displacement of tube in nm
+volatile double TipVoltage; //Tip voltage, in volts
+volatile double TipRadius = 20; //Tip radius in nanometers, for EFM mode
 volatile double OutputConversionFactor; //factor to convert frequency shift into voltage
 volatile double OutputAddFactor; //additional offset to add to
 volatile double FeatureHeight; //height of topographic features, in nm

@@ -59,6 +59,7 @@ var
   TestControlSignal : integer; external name 'TestControlSignal'; //Set to False if using InputChannel to determine distance
   ExternalScan : integer; external name 'ExternalScan'; //Set to False if not scanning
   LJ_FreqShiftMultFact : double; external name 'LJ_FreqShiftMultFact'; //Factor to multiply to calculate frequency shift, essentially 12A
+  EFM_FreqShiftMultFact : double; external name 'EFM_FreqShiftMultFact';
   x_06 : double; external name 'x_06'; //x_0 raised to the power 6, calculated by main program
   ControlMultFact : double; external name 'ControlMultFact'; //Factor to multiply control signal by, to convert it to nm
   ControlAddFact : double; external name 'ControlAddFact'; //Factor to add to control signal
@@ -73,6 +74,9 @@ var
   YPosition : double; external name 'YPosition'; //Y scan position
   XHeight : double; external name 'XHeight'; //actual current height
   FrequencyShift : double; external name 'FrequencyShift'; //resulting frequency shift
+  EFM_Mode : integer; external name 'EFM_Mode'; //if we are doing an EFM scan
+  TipRadius : double; external name 'TipRadius'; //Tip radius in nm for EFM mode calculations
+  TipVoltage : double; external name 'TipVoltage'; //Tip voltage in volts for EFM mod
 
   //Variables associated with the scan tube z axis
   //z coordinate is measured with respect to surface.  Hence, if the tube is completey retracted, this is the

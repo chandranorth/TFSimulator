@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1349717991 source:/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/main.c
+1368152539 source:/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/main.c
 	<stdio.h>
 	<stdlib.h>
 	<unistd.h>
@@ -13,9 +13,10 @@
 	<rtai_spm.h>
 	<queue.c>
 
-1309379940 /usr/realtime/include/rtai_lxrt.h
+1367541969 /usr/realtime/include/rtai_lxrt.h
 	<rtai_sched.h>
 	<rtai_nam2num.h>
+	<linux/sched.h>
 	<asm/rtai_lxrt.h>
 	<sys/types.h>
 	<sys/mman.h>
@@ -29,7 +30,7 @@
 	<unistd.h>
 	<sys/mman.h>
 
-1309379940 /usr/realtime/include/rtai_sched.h
+1367541969 /usr/realtime/include/rtai_sched.h
 	<rtai.h>
 	<sys/time.h>
 	<time.h>
@@ -40,20 +41,20 @@
 	<linux/rbtree.h>
 	<linux/sched.h>
 
-1309379939 /usr/realtime/include/rtai.h
+1367541969 /usr/realtime/include/rtai.h
 	<linux/version.h>
 	<rtai_sanity.h>
 	<asm/rtai.h>
 
-1309379940 /usr/realtime/include/rtai_sanity.h
+1367541969 /usr/realtime/include/rtai_sanity.h
 
-1309379939 /usr/realtime/include/asm/rtai.h
+1367541969 /usr/realtime/include/asm/rtai.h
 	<rtai_config.h>
 	<asm/rtai_hal.h>
 
-1309379939 /usr/realtime/include/rtai_config.h
+1367541969 /usr/realtime/include/rtai_config.h
 
-1309379939 /usr/realtime/include/asm/rtai_hal.h
+1367541969 /usr/realtime/include/asm/rtai_hal.h
 	<rtai_hal_names.h>
 	<asm/rtai_vectors.h>
 	<rtai_types.h>
@@ -71,20 +72,20 @@
 	<asm/rtai_oldnames.h>
 	<asm/rtai_emulate_tsc.h>
 
-1309379939 /usr/realtime/include/rtai_hal_names.h
+1367541969 /usr/realtime/include/rtai_hal_names.h
 	<linux/version.h>
 
-1309379939 /usr/realtime/include/asm/rtai_vectors.h
+1367541969 /usr/realtime/include/asm/rtai_vectors.h
 	<linux/version.h>
 	<rtai_hal_names.h>
 	<rtai_config.h>
 	<linux/interrupt.h>
 
-1309379940 /usr/realtime/include/rtai_types.h
+1367541969 /usr/realtime/include/rtai_types.h
 	<rtai_config.h>
 	<rtai_wrappers.h>
 
-1309379940 /usr/realtime/include/rtai_wrappers.h
+1367541969 /usr/realtime/include/rtai_wrappers.h
 	<linux/version.h>
 	<linux/module.h>
 	<linux/moduleparam.h>
@@ -92,27 +93,27 @@
 	<linux/device.h>
 	<linux/pid.h>
 
-1309379939 /usr/realtime/include/asm/rtai_atomic.h
+1367541969 /usr/realtime/include/asm/rtai_atomic.h
 	<linux/bitops.h>
 	<asm/atomic.h>
 	<asm/system.h>
 
-1309379939 /usr/realtime/include/asm/rtai_fpu.h
+1367541969 /usr/realtime/include/asm/rtai_fpu.h
 	<asm/processor.h>
 
-1309379940 /usr/realtime/include/rtai_trace.h
+1367541969 /usr/realtime/include/rtai_trace.h
 	<rtai_types.h>
 	<linux/trace.h>
 
-1309379939 /usr/realtime/include/asm/rtai_oldnames.h
+1367541969 /usr/realtime/include/asm/rtai_oldnames.h
 	<linux/irq.h>
 
-1309379939 /usr/realtime/include/asm/rtai_emulate_tsc.h
+1367541969 /usr/realtime/include/asm/rtai_emulate_tsc.h
 
-1309379940 /usr/realtime/include/rtai_nam2num.h
+1367541969 /usr/realtime/include/rtai_nam2num.h
 	<rtai_types.h>
 
-1309379939 /usr/realtime/include/asm/rtai_lxrt.h
+1367541969 /usr/realtime/include/asm/rtai_lxrt.h
 	<linux/version.h>
 	<asm/rtai_vectors.h>
 	<asm/segment.h>
@@ -120,11 +121,12 @@
 	<sys/syscall.h>
 	<unistd.h>
 
-1309379940 /usr/realtime/include/rtai_msg.h
+1367541969 /usr/realtime/include/rtai_msg.h
 	<rtai_types.h>
 	<rtai_lxrt.h>
 
-1309379946 /usr/realtime/include/rtai_comedi.h
+1367541971 /usr/realtime/include/rtai_comedi.h
+	<linux/compiler.h>
 	<rtai_types.h>
 	<rtai_sem.h>
 	<rtai_netrpc.h>
@@ -135,14 +137,14 @@
 	<rtai_msg.h>
 	<rtai_shm.h>
 
-1309379940 /usr/realtime/include/rtai_sem.h
+1367541969 /usr/realtime/include/rtai_sem.h
 	<rtai_types.h>
 	<rtai_nam2num.h>
 	<rtai_sched.h>
 	<linux/errno.h>
 	<rtai_lxrt.h>
 
-1309379940 /usr/realtime/include/rtai_netrpc.h
+1367541969 /usr/realtime/include/rtai_netrpc.h
 	<rtai_config.h>
 	<rtai_registry.h>
 	<rtai_lxrt.h>
@@ -153,15 +155,15 @@
 	<stdlib.h>
 	<stddef.h>
 
-1309379940 /usr/realtime/include/rtai_registry.h
+1367541969 /usr/realtime/include/rtai_registry.h
 	<rtai_nam2num.h>
 	<rtai.h>
 
-1309379940 /usr/realtime/include/rtai_mbx.h
+1367541969 /usr/realtime/include/rtai_mbx.h
 	<rtai_sem.h>
 	<rtai_lxrt.h>
 
-1309379940 /usr/realtime/include/rtai_shm.h
+1367541969 /usr/realtime/include/rtai_shm.h
 	<linux/module.h>
 	<linux/version.h>
 	<linux/vmalloc.h>
@@ -176,13 +178,13 @@
 	<sys/ioctl.h>
 	<rtai_lxrt.h>
 
-1309379940 /usr/realtime/include/rtai_malloc.h
+1367541969 /usr/realtime/include/rtai_malloc.h
 	<rtai_types.h>
 	<linux/kernel.h>
 	<linux/list.h>
 	<linux/spinlock.h>
 
-1326127282 /home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface//rtai_spm.h
+1368214640 /home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface//rtai_spm.h
 
 1323185889 /home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface//queue.c
 	<stdio.h>
@@ -190,6 +192,1049 @@
 	<stdlib.h>
 
 1323185889 source:/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/queue.c
+	<stdio.h>
+	<errno.h>
+	<stdlib.h>
+
+1367509004 /usr/src/linux/include/linux/version.h
+
+1307064911 /usr/src/linux/include/linux/interrupt.h
+	<linux/kernel.h>
+	<linux/linkage.h>
+	<linux/bitops.h>
+	<linux/preempt.h>
+	<linux/cpumask.h>
+	<linux/irqreturn.h>
+	<linux/irqnr.h>
+	<linux/hardirq.h>
+	<linux/irqflags.h>
+	<linux/smp.h>
+	<linux/percpu.h>
+	<linux/hrtimer.h>
+	<asm/atomic.h>
+	<asm/ptrace.h>
+	<asm/system.h>
+	<trace/events/irq.h>
+
+1367505627 /usr/src/linux/include/linux/kernel.h
+	<stdarg.h>
+	<linux/linkage.h>
+	<linux/stddef.h>
+	<linux/types.h>
+	<linux/compiler.h>
+	<linux/bitops.h>
+	<linux/log2.h>
+	<linux/ipipe_base.h>
+	<linux/typecheck.h>
+	<linux/printk.h>
+	<linux/dynamic_debug.h>
+	<asm/byteorder.h>
+	<asm/bug.h>
+	<asm/div64.h>
+
+1307064911 /usr/src/linux/include/linux/linkage.h
+	<linux/compiler.h>
+	<asm/linkage.h>
+
+1307064911 /usr/src/linux/include/linux/compiler.h
+	<linux/compiler-gcc.h>
+	<linux/compiler-intel.h>
+
+1307064911 /usr/src/linux/include/linux/compiler-gcc.h
+
+1307064911 /usr/src/linux/include/linux/compiler-intel.h
+	<asm/intrinsics.h>
+
+1307064911 /usr/src/linux/include/linux/stddef.h
+	<linux/compiler.h>
+
+1307064911 /usr/src/linux/include/linux/types.h
+	<asm/types.h>
+	<linux/posix_types.h>
+
+1307064911 /usr/src/linux/include/linux/posix_types.h
+	<linux/stddef.h>
+	<asm/posix_types.h>
+
+1307064911 /usr/src/linux/include/linux/bitops.h
+	<asm/types.h>
+	<asm/bitops.h>
+
+1307064911 /usr/src/linux/include/linux/log2.h
+	<linux/types.h>
+	<linux/bitops.h>
+
+1367505627 /usr/src/linux/include/linux/ipipe_base.h
+	<asm/ipipe_base.h>
+
+1307064911 /usr/src/linux/include/linux/typecheck.h
+
+1307064911 /usr/src/linux/include/linux/printk.h
+
+1307064911 /usr/src/linux/include/linux/dynamic_debug.h
+	<linux/jump_label.h>
+
+1307064911 /usr/src/linux/include/linux/jump_label.h
+	<asm/jump_label.h>
+
+1367505627 /usr/src/linux/include/linux/preempt.h
+	<linux/thread_info.h>
+	<linux/linkage.h>
+	<linux/list.h>
+	<linux/ipipe_base.h>
+
+1307064911 /usr/src/linux/include/linux/thread_info.h
+	<linux/types.h>
+	<linux/bitops.h>
+	<asm/thread_info.h>
+
+1307064911 /usr/src/linux/include/linux/list.h
+	<linux/types.h>
+	<linux/stddef.h>
+	<linux/poison.h>
+	<linux/prefetch.h>
+
+1307064911 /usr/src/linux/include/linux/poison.h
+
+1307064911 /usr/src/linux/include/linux/prefetch.h
+	<linux/types.h>
+	<asm/processor.h>
+	<asm/cache.h>
+
+1307064911 /usr/src/linux/include/linux/cpumask.h
+	<linux/kernel.h>
+	<linux/threads.h>
+	<linux/bitmap.h>
+
+1307064911 /usr/src/linux/include/linux/threads.h
+
+1307064911 /usr/src/linux/include/linux/bitmap.h
+	<linux/types.h>
+	<linux/bitops.h>
+	<linux/string.h>
+	<linux/kernel.h>
+
+1307064911 /usr/src/linux/include/linux/string.h
+	<string.h>
+	<linux/compiler.h>
+	<linux/types.h>
+	<linux/stddef.h>
+	<stdarg.h>
+	<asm/string.h>
+
+1307064911 /usr/src/linux/include/linux/irqreturn.h
+
+1367505627 /usr/src/linux/include/linux/irqnr.h
+	<asm/irq.h>
+
+1367505627 /usr/src/linux/include/linux/hardirq.h
+	<linux/preempt.h>
+	<linux/lockdep.h>
+	<linux/ftrace_irq.h>
+	<asm/hardirq.h>
+	<linux/sched.h>
+
+1307064911 /usr/src/linux/include/linux/lockdep.h
+	<linux/linkage.h>
+	<linux/list.h>
+	<linux/debug_locks.h>
+	<linux/stacktrace.h>
+
+1307064911 /usr/src/linux/include/linux/debug_locks.h
+	<linux/kernel.h>
+	<asm/atomic.h>
+	<asm/system.h>
+
+1307064911 /usr/src/linux/include/linux/stacktrace.h
+
+1307064911 /usr/src/linux/include/linux/ftrace_irq.h
+
+1367505627 /usr/src/linux/include/linux/sched.h
+	<asm/param.h>
+	<linux/capability.h>
+	<linux/threads.h>
+	<linux/kernel.h>
+	<linux/types.h>
+	<linux/timex.h>
+	<linux/jiffies.h>
+	<linux/rbtree.h>
+	<linux/thread_info.h>
+	<linux/cpumask.h>
+	<linux/errno.h>
+	<linux/nodemask.h>
+	<linux/mm_types.h>
+	<linux/ipipe.h>
+	<asm/system.h>
+	<asm/page.h>
+	<asm/ptrace.h>
+	<asm/cputime.h>
+	<linux/smp.h>
+	<linux/sem.h>
+	<linux/signal.h>
+	<linux/compiler.h>
+	<linux/completion.h>
+	<linux/pid.h>
+	<linux/percpu.h>
+	<linux/topology.h>
+	<linux/proportions.h>
+	<linux/seccomp.h>
+	<linux/rcupdate.h>
+	<linux/rculist.h>
+	<linux/rtmutex.h>
+	<linux/time.h>
+	<linux/param.h>
+	<linux/resource.h>
+	<linux/timer.h>
+	<linux/hrtimer.h>
+	<linux/task_io_accounting.h>
+	<linux/latencytop.h>
+	<linux/cred.h>
+	<asm/processor.h>
+	<linux/spinlock.h>
+	<linux/aio.h>
+	<asm/current.h>
+
+1307064911 /usr/src/linux/include/linux/capability.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/timex.h
+	<linux/time.h>
+	<linux/compiler.h>
+	<linux/types.h>
+	<linux/param.h>
+	<asm/timex.h>
+
+1307064911 /usr/src/linux/include/linux/time.h
+	<linux/types.h>
+	<linux/cache.h>
+	<linux/seqlock.h>
+	<linux/math64.h>
+
+1307064911 /usr/src/linux/include/linux/cache.h
+	<linux/kernel.h>
+	<asm/cache.h>
+
+1307064911 /usr/src/linux/include/linux/seqlock.h
+	<linux/spinlock.h>
+	<linux/preempt.h>
+
+1367505627 /usr/src/linux/include/linux/spinlock.h
+	<linux/typecheck.h>
+	<linux/preempt.h>
+	<linux/linkage.h>
+	<linux/compiler.h>
+	<linux/irqflags.h>
+	<linux/thread_info.h>
+	<linux/kernel.h>
+	<linux/stringify.h>
+	<linux/bottom_half.h>
+	<asm/system.h>
+	<linux/spinlock_types.h>
+	<asm/spinlock.h>
+	<linux/spinlock_up.h>
+	<linux/ipipe_lock.h>
+	<linux/rwlock.h>
+	<linux/spinlock_api_smp.h>
+	<linux/spinlock_api_up.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/irqflags.h
+	<linux/typecheck.h>
+	<asm/irqflags.h>
+
+1307064911 /usr/src/linux/include/linux/stringify.h
+
+1307064911 /usr/src/linux/include/linux/bottom_half.h
+
+1307064911 /usr/src/linux/include/linux/spinlock_types.h
+	<asm/spinlock_types.h>
+	<linux/spinlock_types_up.h>
+	<linux/lockdep.h>
+	<linux/rwlock_types.h>
+
+1307064911 /usr/src/linux/include/linux/spinlock_types_up.h
+
+1307064911 /usr/src/linux/include/linux/rwlock_types.h
+
+1367505627 /usr/src/linux/include/linux/spinlock_up.h
+
+1367505627 /usr/src/linux/include/linux/ipipe_lock.h
+
+1367505627 /usr/src/linux/include/linux/rwlock.h
+
+1367505627 /usr/src/linux/include/linux/spinlock_api_smp.h
+	<linux/rwlock_api_smp.h>
+
+1367505627 /usr/src/linux/include/linux/rwlock_api_smp.h
+
+1307064911 /usr/src/linux/include/linux/spinlock_api_up.h
+
+1307064911 /usr/src/linux/include/linux/math64.h
+	<linux/types.h>
+	<asm/div64.h>
+
+1307064911 /usr/src/linux/include/linux/param.h
+	<asm/param.h>
+
+1307064911 /usr/src/linux/include/linux/jiffies.h
+	<linux/math64.h>
+	<linux/kernel.h>
+	<linux/types.h>
+	<linux/time.h>
+	<linux/timex.h>
+	<asm/param.h>
+
+1307064911 /usr/src/linux/include/linux/rbtree.h
+	<linux/kernel.h>
+	<linux/stddef.h>
+
+1307064911 /usr/src/linux/include/linux/errno.h
+	<asm/errno.h>
+
+1307064911 /usr/src/linux/include/linux/nodemask.h
+	<linux/kernel.h>
+	<linux/threads.h>
+	<linux/bitmap.h>
+	<linux/numa.h>
+
+1307064911 /usr/src/linux/include/linux/numa.h
+
+1307064911 /usr/src/linux/include/linux/mm_types.h
+	<linux/auxvec.h>
+	<linux/types.h>
+	<linux/threads.h>
+	<linux/list.h>
+	<linux/spinlock.h>
+	<linux/prio_tree.h>
+	<linux/rbtree.h>
+	<linux/rwsem.h>
+	<linux/completion.h>
+	<linux/cpumask.h>
+	<linux/page-debug-flags.h>
+	<asm/page.h>
+	<asm/mmu.h>
+
+1307064911 /usr/src/linux/include/linux/auxvec.h
+	<asm/auxvec.h>
+
+1307064911 /usr/src/linux/include/linux/prio_tree.h
+
+1307064911 /usr/src/linux/include/linux/rwsem.h
+	<linux/linkage.h>
+	<linux/types.h>
+	<linux/kernel.h>
+	<asm/system.h>
+	<asm/atomic.h>
+	<linux/rwsem-spinlock.h>
+	<asm/rwsem.h>
+
+1307064911 /usr/src/linux/include/linux/rwsem-spinlock.h
+	<linux/spinlock.h>
+	<linux/list.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/completion.h
+	<linux/wait.h>
+
+1307064911 /usr/src/linux/include/linux/wait.h
+	<linux/list.h>
+	<linux/stddef.h>
+	<linux/spinlock.h>
+	<asm/system.h>
+	<asm/current.h>
+
+1307064911 /usr/src/linux/include/linux/page-debug-flags.h
+
+1367505627 /usr/src/linux/include/linux/ipipe.h
+	<linux/spinlock.h>
+	<linux/cache.h>
+	<linux/percpu.h>
+	<linux/mutex.h>
+	<linux/linkage.h>
+	<linux/ipipe_base.h>
+	<asm/ipipe.h>
+	<asm/bug.h>
+	<linux/cpumask.h>
+	<asm/system.h>
+
+1307064911 /usr/src/linux/include/linux/percpu.h
+	<linux/preempt.h>
+	<linux/smp.h>
+	<linux/cpumask.h>
+	<linux/pfn.h>
+	<linux/init.h>
+	<asm/percpu.h>
+
+1307064911 /usr/src/linux/include/linux/smp.h
+	<linux/errno.h>
+	<linux/types.h>
+	<linux/list.h>
+	<linux/cpumask.h>
+	<linux/preempt.h>
+	<linux/kernel.h>
+	<linux/compiler.h>
+	<linux/thread_info.h>
+	<asm/smp.h>
+
+1307064911 /usr/src/linux/include/linux/pfn.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/init.h
+	<linux/compiler.h>
+
+1307064911 /usr/src/linux/include/linux/mutex.h
+	<linux/list.h>
+	<linux/spinlock_types.h>
+	<linux/linkage.h>
+	<linux/lockdep.h>
+	<asm/atomic.h>
+	<linux/mutex-debug.h>
+
+1307064911 /usr/src/linux/include/linux/mutex-debug.h
+	<linux/linkage.h>
+	<linux/lockdep.h>
+
+1307064911 /usr/src/linux/include/linux/sem.h
+	<linux/ipc.h>
+	<asm/sembuf.h>
+	<asm/atomic.h>
+	<linux/rcupdate.h>
+	<linux/cache.h>
+
+1307064911 /usr/src/linux/include/linux/ipc.h
+	<linux/types.h>
+	<asm/ipcbuf.h>
+	<linux/spinlock.h>
+
+1307064911 /usr/src/linux/include/linux/rcupdate.h
+	<linux/cache.h>
+	<linux/spinlock.h>
+	<linux/threads.h>
+	<linux/cpumask.h>
+	<linux/seqlock.h>
+	<linux/lockdep.h>
+	<linux/completion.h>
+	<linux/debugobjects.h>
+	<linux/compiler.h>
+	<linux/rcutree.h>
+	<linux/rcutiny.h>
+
+1307064911 /usr/src/linux/include/linux/debugobjects.h
+	<linux/list.h>
+	<linux/spinlock.h>
+
+1307064911 /usr/src/linux/include/linux/rcutree.h
+
+1307064911 /usr/src/linux/include/linux/rcutiny.h
+	<linux/cache.h>
+
+1307064911 /usr/src/linux/include/linux/signal.h
+	<asm/signal.h>
+	<asm/siginfo.h>
+	<linux/list.h>
+	<linux/bitops.h>
+	<linux/string.h>
+
+1307064911 /usr/src/linux/include/linux/pid.h
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/topology.h
+	<linux/cpumask.h>
+	<linux/bitops.h>
+	<linux/mmzone.h>
+	<linux/smp.h>
+	<linux/percpu.h>
+	<asm/topology.h>
+
+1307064911 /usr/src/linux/include/linux/mmzone.h
+	<linux/spinlock.h>
+	<linux/list.h>
+	<linux/wait.h>
+	<linux/bitops.h>
+	<linux/cache.h>
+	<linux/threads.h>
+	<linux/numa.h>
+	<linux/init.h>
+	<linux/seqlock.h>
+	<linux/nodemask.h>
+	<linux/pageblock-flags.h>
+	<generated/bounds.h>
+	<asm/atomic.h>
+	<asm/page.h>
+	<linux/memory_hotplug.h>
+	<asm/mmzone.h>
+	<asm/sparsemem.h>
+
+1307064911 /usr/src/linux/include/linux/pageblock-flags.h
+	<linux/types.h>
+
+1367509004 /usr/src/linux/include/generated/bounds.h
+
+1307064911 /usr/src/linux/include/linux/memory_hotplug.h
+	<linux/mmzone.h>
+	<linux/spinlock.h>
+	<linux/notifier.h>
+
+1307064911 /usr/src/linux/include/linux/notifier.h
+	<linux/errno.h>
+	<linux/mutex.h>
+	<linux/rwsem.h>
+	<linux/srcu.h>
+
+1307064911 /usr/src/linux/include/linux/srcu.h
+	<linux/mutex.h>
+
+1307064911 /usr/src/linux/include/linux/proportions.h
+	<linux/percpu_counter.h>
+	<linux/spinlock.h>
+	<linux/mutex.h>
+
+1307064911 /usr/src/linux/include/linux/percpu_counter.h
+	<linux/spinlock.h>
+	<linux/smp.h>
+	<linux/list.h>
+	<linux/threads.h>
+	<linux/percpu.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/seccomp.h
+	<linux/thread_info.h>
+	<asm/seccomp.h>
+	<linux/errno.h>
+
+1307064911 /usr/src/linux/include/linux/rculist.h
+	<linux/list.h>
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/rtmutex.h
+	<linux/linkage.h>
+	<linux/plist.h>
+	<linux/spinlock_types.h>
+
+1307064911 /usr/src/linux/include/linux/plist.h
+	<linux/kernel.h>
+	<linux/list.h>
+	<linux/spinlock_types.h>
+
+1307064911 /usr/src/linux/include/linux/resource.h
+	<linux/time.h>
+	<linux/types.h>
+	<asm/resource.h>
+
+1307064911 /usr/src/linux/include/linux/timer.h
+	<linux/list.h>
+	<linux/ktime.h>
+	<linux/stddef.h>
+	<linux/debugobjects.h>
+	<linux/stringify.h>
+
+1307064911 /usr/src/linux/include/linux/ktime.h
+	<linux/time.h>
+	<linux/jiffies.h>
+
+1307064911 /usr/src/linux/include/linux/hrtimer.h
+	<linux/rbtree.h>
+	<linux/ktime.h>
+	<linux/init.h>
+	<linux/list.h>
+	<linux/wait.h>
+	<linux/percpu.h>
+	<linux/timer.h>
+	<linux/timerqueue.h>
+
+1307064911 /usr/src/linux/include/linux/timerqueue.h
+	<linux/rbtree.h>
+	<linux/ktime.h>
+
+1307064911 /usr/src/linux/include/linux/task_io_accounting.h
+
+1307064911 /usr/src/linux/include/linux/latencytop.h
+	<linux/compiler.h>
+
+1307064911 /usr/src/linux/include/linux/cred.h
+	<linux/capability.h>
+	<linux/init.h>
+	<linux/key.h>
+	<linux/selinux.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/key.h
+	<linux/types.h>
+	<linux/list.h>
+	<linux/rbtree.h>
+	<linux/rcupdate.h>
+	<linux/sysctl.h>
+	<linux/rwsem.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/sysctl.h
+	<linux/kernel.h>
+	<linux/types.h>
+	<linux/compiler.h>
+	<linux/list.h>
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/selinux.h
+
+1307064911 /usr/src/linux/include/linux/aio.h
+	<linux/list.h>
+	<linux/workqueue.h>
+	<linux/aio_abi.h>
+	<linux/uio.h>
+	<linux/rcupdate.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/workqueue.h
+	<linux/timer.h>
+	<linux/linkage.h>
+	<linux/bitops.h>
+	<linux/lockdep.h>
+	<linux/threads.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/aio_abi.h
+	<linux/types.h>
+	<asm/byteorder.h>
+
+1307064911 /usr/src/linux/include/linux/uio.h
+	<linux/compiler.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/trace/events/irq.h
+	<linux/tracepoint.h>
+	<trace/define_trace.h>
+
+1307064911 /usr/src/linux/include/linux/tracepoint.h
+	<linux/errno.h>
+	<linux/types.h>
+	<linux/rcupdate.h>
+	<linux/jump_label.h>
+
+1307064911 /usr/src/linux/include/trace/define_trace.h
+	<linux/stringify.h>
+	<linux/module.h>
+	<trace/ftrace.h>
+
+1307064911 /usr/src/linux/include/linux/module.h
+	<linux/list.h>
+	<linux/stat.h>
+	<linux/compiler.h>
+	<linux/cache.h>
+	<linux/kmod.h>
+	<linux/elf.h>
+	<linux/stringify.h>
+	<linux/kobject.h>
+	<linux/moduleparam.h>
+	<linux/tracepoint.h>
+	<linux/percpu.h>
+	<asm/module.h>
+	<trace/events/module.h>
+
+1307064911 /usr/src/linux/include/linux/stat.h
+	<asm/stat.h>
+	<linux/types.h>
+	<linux/time.h>
+
+1307064911 /usr/src/linux/include/linux/kmod.h
+	<linux/gfp.h>
+	<linux/stddef.h>
+	<linux/errno.h>
+	<linux/compiler.h>
+	<linux/workqueue.h>
+
+1307064911 /usr/src/linux/include/linux/gfp.h
+	<linux/mmzone.h>
+	<linux/stddef.h>
+	<linux/linkage.h>
+	<linux/topology.h>
+	<linux/mmdebug.h>
+
+1307064911 /usr/src/linux/include/linux/mmdebug.h
+
+1307064911 /usr/src/linux/include/linux/elf.h
+	<linux/types.h>
+	<linux/elf-em.h>
+	<asm/elf.h>
+
+1307064911 /usr/src/linux/include/linux/elf-em.h
+
+1307064911 /usr/src/linux/include/linux/kobject.h
+	<linux/types.h>
+	<linux/list.h>
+	<linux/sysfs.h>
+	<linux/compiler.h>
+	<linux/spinlock.h>
+	<linux/kref.h>
+	<linux/kobject_ns.h>
+	<linux/kernel.h>
+	<linux/wait.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/sysfs.h
+	<linux/compiler.h>
+	<linux/errno.h>
+	<linux/list.h>
+	<linux/lockdep.h>
+	<linux/kobject_ns.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/kobject_ns.h
+
+1307064911 /usr/src/linux/include/linux/kref.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/moduleparam.h
+	<linux/init.h>
+	<linux/stringify.h>
+	<linux/kernel.h>
+
+1307064911 /usr/src/linux/include/trace/events/module.h
+	<linux/tracepoint.h>
+	<trace/define_trace.h>
+
+1307064911 /usr/src/linux/include/trace/ftrace.h
+	<linux/ftrace_event.h>
+
+1307064911 /usr/src/linux/include/linux/ftrace_event.h
+	<linux/ring_buffer.h>
+	<linux/trace_seq.h>
+	<linux/percpu.h>
+	<linux/hardirq.h>
+	<linux/perf_event.h>
+
+1307064911 /usr/src/linux/include/linux/ring_buffer.h
+	<linux/kmemcheck.h>
+	<linux/mm.h>
+	<linux/seq_file.h>
+
+1307064911 /usr/src/linux/include/linux/kmemcheck.h
+	<linux/mm_types.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/mm.h
+	<linux/errno.h>
+	<linux/gfp.h>
+	<linux/list.h>
+	<linux/mmzone.h>
+	<linux/rbtree.h>
+	<linux/prio_tree.h>
+	<linux/debug_locks.h>
+	<linux/mm_types.h>
+	<linux/range.h>
+	<linux/pfn.h>
+	<linux/bit_spinlock.h>
+	<asm/page.h>
+	<asm/pgtable.h>
+	<asm/processor.h>
+	<linux/page-flags.h>
+	<linux/huge_mm.h>
+	<linux/vmstat.h>
+
+1307064911 /usr/src/linux/include/linux/range.h
+
+1307064911 /usr/src/linux/include/linux/bit_spinlock.h
+	<linux/kernel.h>
+	<linux/preempt.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/page-flags.h
+	<linux/types.h>
+	<linux/mm_types.h>
+	<generated/bounds.h>
+
+1307064911 /usr/src/linux/include/linux/huge_mm.h
+
+1307064911 /usr/src/linux/include/linux/vmstat.h
+	<linux/types.h>
+	<linux/percpu.h>
+	<linux/mm.h>
+	<linux/mmzone.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/seq_file.h
+	<linux/types.h>
+	<linux/string.h>
+	<linux/mutex.h>
+	<linux/cpumask.h>
+	<linux/nodemask.h>
+
+1307064911 /usr/src/linux/include/linux/trace_seq.h
+	<linux/fs.h>
+	<asm/page.h>
+
+1307064911 /usr/src/linux/include/linux/fs.h
+	<linux/limits.h>
+	<linux/ioctl.h>
+	<linux/blk_types.h>
+	<linux/types.h>
+	<linux/linkage.h>
+	<linux/wait.h>
+	<linux/types.h>
+	<linux/kdev_t.h>
+	<linux/dcache.h>
+	<linux/path.h>
+	<linux/stat.h>
+	<linux/cache.h>
+	<linux/list.h>
+	<linux/radix-tree.h>
+	<linux/prio_tree.h>
+	<linux/init.h>
+	<linux/pid.h>
+	<linux/mutex.h>
+	<linux/capability.h>
+	<linux/semaphore.h>
+	<linux/fiemap.h>
+	<linux/rculist_bl.h>
+	<asm/atomic.h>
+	<asm/byteorder.h>
+	<linux/quota.h>
+	<linux/seqlock.h>
+	<linux/nfs_fs_i.h>
+	<linux/fcntl.h>
+	<linux/err.h>
+
+1307064911 /usr/src/linux/include/linux/limits.h
+
+1307064911 /usr/src/linux/include/linux/ioctl.h
+	<asm/ioctl.h>
+
+1307064911 /usr/src/linux/include/linux/blk_types.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/kdev_t.h
+
+1307064911 /usr/src/linux/include/linux/dcache.h
+	<asm/atomic.h>
+	<linux/list.h>
+	<linux/rculist.h>
+	<linux/rculist_bl.h>
+	<linux/spinlock.h>
+	<linux/seqlock.h>
+	<linux/cache.h>
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/rculist_bl.h
+	<linux/list_bl.h>
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/list_bl.h
+	<linux/list.h>
+
+1307064911 /usr/src/linux/include/linux/path.h
+
+1307064911 /usr/src/linux/include/linux/radix-tree.h
+	<linux/preempt.h>
+	<linux/types.h>
+	<linux/kernel.h>
+	<linux/rcupdate.h>
+
+1307064911 /usr/src/linux/include/linux/semaphore.h
+	<linux/list.h>
+	<linux/spinlock.h>
+
+1307064911 /usr/src/linux/include/linux/fiemap.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/quota.h
+	<linux/errno.h>
+	<linux/types.h>
+	<linux/list.h>
+	<linux/mutex.h>
+	<linux/rwsem.h>
+	<linux/spinlock.h>
+	<linux/wait.h>
+	<linux/percpu_counter.h>
+	<linux/dqblk_xfs.h>
+	<linux/dqblk_v1.h>
+	<linux/dqblk_v2.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/dqblk_xfs.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/dqblk_v1.h
+
+1307064911 /usr/src/linux/include/linux/dqblk_v2.h
+	<linux/dqblk_qtree.h>
+
+1307064911 /usr/src/linux/include/linux/dqblk_qtree.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/nfs_fs_i.h
+	<asm/types.h>
+	<linux/list.h>
+	<linux/nfs.h>
+
+1307064911 /usr/src/linux/include/linux/nfs.h
+	<linux/sunrpc/msg_prot.h>
+	<linux/string.h>
+
+1307064911 /usr/src/linux/include/linux/sunrpc/msg_prot.h
+	<linux/inet.h>
+
+1307064911 /usr/src/linux/include/linux/inet.h
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/fcntl.h
+	<asm/fcntl.h>
+
+1307064911 /usr/src/linux/include/linux/err.h
+	<linux/compiler.h>
+	<asm/errno.h>
+
+1307064911 /usr/src/linux/include/linux/perf_event.h
+	<linux/types.h>
+	<linux/ioctl.h>
+	<asm/byteorder.h>
+	<asm/perf_event.h>
+	<asm/local64.h>
+	<asm/hw_breakpoint.h>
+	<linux/list.h>
+	<linux/mutex.h>
+	<linux/rculist.h>
+	<linux/rcupdate.h>
+	<linux/spinlock.h>
+	<linux/hrtimer.h>
+	<linux/fs.h>
+	<linux/pid_namespace.h>
+	<linux/workqueue.h>
+	<linux/ftrace.h>
+	<linux/cpu.h>
+	<linux/irq_work.h>
+	<linux/jump_label_ref.h>
+	<asm/atomic.h>
+	<asm/local.h>
+
+1307064911 /usr/src/linux/include/linux/pid_namespace.h
+	<linux/sched.h>
+	<linux/mm.h>
+	<linux/threads.h>
+	<linux/nsproxy.h>
+	<linux/kref.h>
+	<linux/err.h>
+
+1307064911 /usr/src/linux/include/linux/nsproxy.h
+	<linux/spinlock.h>
+	<linux/sched.h>
+
+1307064911 /usr/src/linux/include/linux/ftrace.h
+	<linux/trace_clock.h>
+	<linux/kallsyms.h>
+	<linux/linkage.h>
+	<linux/bitops.h>
+	<linux/module.h>
+	<linux/ktime.h>
+	<linux/sched.h>
+	<linux/types.h>
+	<linux/init.h>
+	<linux/fs.h>
+	<asm/ftrace.h>
+
+1307064911 /usr/src/linux/include/linux/trace_clock.h
+	<linux/compiler.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/kallsyms.h
+	<linux/errno.h>
+	<linux/kernel.h>
+	<linux/stddef.h>
+
+1307064911 /usr/src/linux/include/linux/cpu.h
+	<linux/sysdev.h>
+	<linux/node.h>
+	<linux/compiler.h>
+	<linux/cpumask.h>
+
+1307064911 /usr/src/linux/include/linux/sysdev.h
+	<linux/kobject.h>
+	<linux/module.h>
+	<linux/pm.h>
+
+1307064911 /usr/src/linux/include/linux/pm.h
+	<linux/list.h>
+	<linux/workqueue.h>
+	<linux/spinlock.h>
+	<linux/wait.h>
+	<linux/timer.h>
+	<linux/completion.h>
+
+1307064911 /usr/src/linux/include/linux/node.h
+	<linux/sysdev.h>
+	<linux/cpumask.h>
+	<linux/workqueue.h>
+
+1307064911 /usr/src/linux/include/linux/irq_work.h
+
+1307064911 /usr/src/linux/include/linux/jump_label_ref.h
+	<linux/jump_label.h>
+	<asm/atomic.h>
+
+1307064911 /usr/src/linux/include/linux/device.h
+	<linux/ioport.h>
+	<linux/kobject.h>
+	<linux/klist.h>
+	<linux/list.h>
+	<linux/lockdep.h>
+	<linux/compiler.h>
+	<linux/types.h>
+	<linux/module.h>
+	<linux/pm.h>
+	<asm/atomic.h>
+	<asm/device.h>
+	<linux/pm_wakeup.h>
+
+1307064911 /usr/src/linux/include/linux/ioport.h
+	<linux/compiler.h>
+	<linux/types.h>
+
+1307064911 /usr/src/linux/include/linux/klist.h
+	<linux/spinlock.h>
+	<linux/kref.h>
+	<linux/list.h>
+
+1307064911 /usr/src/linux/include/linux/pm_wakeup.h
+	<linux/types.h>
+
+1367505627 /usr/src/linux/include/linux/irq.h
+	<linux/smp.h>
+	<linux/linkage.h>
+	<linux/cache.h>
+	<linux/spinlock.h>
+	<linux/cpumask.h>
+	<linux/gfp.h>
+	<linux/irqreturn.h>
+	<linux/irqnr.h>
+	<linux/errno.h>
+	<linux/topology.h>
+	<linux/wait.h>
+	<asm/irq.h>
+	<asm/ptrace.h>
+	<asm/irq_regs.h>
+	<linux/irqdesc.h>
+	<asm/hw_irq.h>
+
+1367505627 /usr/src/linux/include/linux/irqdesc.h
+
+1307064911 /usr/src/linux/include/linux/vmalloc.h
+	<linux/spinlock.h>
+	<linux/init.h>
+	<asm/page.h>
+
+1368215512 source:/home/chandra/LazarusPrograms/TuningForkSimulator/RTAILazarusTFCInterface/main.c
+	<stdio.h>
+	<stdlib.h>
+	<unistd.h>
+	<fcntl.h>
+	<sys/mman.h>
+	<sys/io.h>
+	<math.h>
+	<rtai_lxrt.h>
+	<rtai_msg.h>
+	<rtai_comedi.h>
+	<rtai_spm.h>
+	<queue.c>
+
+1368215512 source:/home/chandra/LazarusPrograms/TuningForkSimulator/RTAILazarusTFCInterface/queue.c
 	<stdio.h>
 	<errno.h>
 	<stdlib.h>

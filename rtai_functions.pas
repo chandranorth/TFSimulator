@@ -2,7 +2,7 @@ unit rtai_functions;
 
 {$mode objfpc}{$H+}
 {$linklib liblxrt.a}
-{$linklib libsciblk.a}
+//{$linklib libsciblk.a}
 
 interface
 

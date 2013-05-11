@@ -30,6 +30,9 @@
 #define PID_cutoff_N 20
 #define MaxvOutput 1000
 #define MinvOutput -1000
+#define eps0  8.85E-3  //in Farads/nm
+#define pi  3.14156
+#define EFMScaleFactor eps0*pi
 
 
 //the queue.ch file
@@ -71,6 +74,8 @@ int StartMainTask( int priority)
  //function to start a real time task with the given priority
  //StartMainTask is designed to be called from the Pascal Program to start the Main (i.e., Pascal) rt program
 
+    rt_allow_nonroot_hrt();
+    timer_interval = nano2count(TimerTime);
 
      if(!(GlobalTask = rt_task_init_schmod(nam2num( "SomeTask" ), // Name
                                         priority, // Priority
@@ -82,6 +87,23 @@ int StartMainTask( int priority)
             return 1;
         }
        else {
+                if ( (hard_timer_running == rt_is_hard_timer_running() ))
+                    {
+                     stop_rt_timer();
+                     rt_set_oneshot_mode();
+                     start_rt_timer(timer_interval);
+                     //sampling_interval = nano2count(TICK_TIME);  //Converts a value from
+                                                //nanoseconds to internal count units.
+                    }
+                else
+                    {
+                     rt_set_oneshot_mode();
+                     start_rt_timer(timer_interval);
+                     //sampling_interval = nano2count(TICK_TIME); // Sets the period of the concurrent task
+                    // that will be launched later.
+                    }
+                rt_set_runnable_on_cpuid(GlobalTask, 0);
+                mlockall(MCL_CURRENT | MCL_FUTURE);
            return 0;
        }
 }
@@ -91,6 +113,7 @@ int StartMainTask( int priority)
 int EndMainTask()
 {
     //EndMainTask is designed to be called from the Pascal Program to end the Main (i.e., Pascal) rt program
+    rt_make_soft_real_time();
     rt_task_delete(GlobalTask);
    return 0;
 }
@@ -201,6 +224,7 @@ int tf_loop()
     lsampl_t data_to_card, data_from_card;
     static comedi_t * dev_in, * dev_out, * dev_x, * dev_y;
     double XModPosition, YModPosition; //Scan positions, modulo the FeaturePeriod
+    int XIntegerPosition, YIntegerPosition; //Scan positions, to identify the square we are on
     double delta_X; //height of tip above feature
 
     dev_in = comedi_open(device_names[InputChannel.board_number]);
@@ -299,8 +323,10 @@ int tf_loop()
            }  //else both X position and Y Position are provided by the main program
 
         //Now we determine whether the XPosition and YPosition are such that the height should be modified
-        XModPosition = XPosition - floor(XPosition/FeaturePeriod);
-        YModPosition = YPosition - floor(YPosition/FeaturePeriod);
+        XIntegerPosition = floor(XPosition/FeaturePeriod);
+        YIntegerPosition = floor(YPosition/FeaturePeriod);
+        XModPosition = XPosition - XIntegerPosition;
+        YModPosition = YPosition - YIntegerPosition;
         XHeight = 0.0;
 
         if ((XModPosition<=((FeatureSize/2)+FeatureCenter))&&(XModPosition>=(FeatureCenter-(FeatureSize/2)))&&(YModPosition<=((FeatureSize/2)+FeatureCenter))&&(YModPosition>=(FeatureCenter-(FeatureSize/2))))
@@ -310,6 +336,10 @@ int tf_loop()
         delta_X =((TubeDisplacement-XHeight)<min_delta_x)? min_delta_x:(TubeDisplacement-XHeight);
         FrequencyShift = (double) LJ_FreqShiftMultFact*((13/powl(delta_X, 14)) - (7/(x_06*powl(delta_X,8))));
         //FrequencyShift = (double) (LJ_FreqShiftMultFact*powl(delta_X, 14))*(13 - (7/x_06)*powl(delta_X,6));
+        if (EFM_Mode && (((XIntegerPosition+YIntegerPosition) % 2)!=0))
+           {
+               FrequencyShift +=(EFM_FreqShiftMultFact*(TipRadius+2.*delta_X))/(delta_X*delta_X*(delta_X+TipRadius)*(delta_X+TipRadius));
+           }
         OutputValue = AmplifierGainSign*OutputConversionFactor*FrequencyShift;
         OutputValue = (OutputValue>MaxOutputVoltage)? MaxOutputVoltage:OutputValue;
         OutputValue = (OutputValue<MinOutputVoltage)? MinOutputVoltage:OutputValue;

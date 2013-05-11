@@ -1,14 +1,14 @@
 object TuningForkForm: TTuningForkForm
-  Left = 103
+  Left = 110
   Height = 735
-  Top = 25
+  Top = 18
   Width = 957
   ActiveControl = Memo3
   Caption = 'Tuning Fork Transducer Simulator'
   ClientHeight = 735
   ClientWidth = 957
   OnCreate = FormCreate
-  LCLVersion = '0.9.28.2'
+  LCLVersion = '1.0.8.0'
   object InputGroupBox: TGroupBox
     Left = 696
     Height = 304
@@ -17,8 +17,8 @@ object TuningForkForm: TTuningForkForm
     BorderSpacing.Bottom = 1
     BorderSpacing.Around = 1
     Caption = 'Input Control---Voltage to nm'
-    ClientHeight = 286
-    ClientWidth = 254
+    ClientHeight = 285
+    ClientWidth = 252
     Color = clRed
     Font.Height = -13
     Font.Name = 'Sans'
@@ -27,9 +27,9 @@ object TuningForkForm: TTuningForkForm
     TabOrder = 0
     object Label8: TLabel
       Left = 14
-      Height = 14
+      Height = 15
       Top = 71
-      Width = 108
+      Width = 113
       Caption = 'Control Signal Input'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -38,9 +38,9 @@ object TuningForkForm: TTuningForkForm
     end
     object ControlSignalOutputLabel: TLabel
       Left = 14
-      Height = 14
+      Height = 15
       Top = 135
-      Width = 119
+      Width = 126
       Caption = 'Control Signal (V): 0.0'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -49,9 +49,9 @@ object TuningForkForm: TTuningForkForm
     end
     object ResultDispLabel: TLabel
       Left = 14
-      Height = 14
+      Height = 15
       Top = 263
-      Width = 164
+      Width = 171
       Caption = 'Resulting displacement (nm): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -60,7 +60,7 @@ object TuningForkForm: TTuningForkForm
     end
     object InputControlComboBox: TComboBox
       Left = 14
-      Height = 27
+      Height = 25
       Top = 95
       Width = 200
       DropDownCount = 16
@@ -74,15 +74,17 @@ object TuningForkForm: TTuningForkForm
     end
     object InputControlMultEdit: TLabeledEdit
       Left = 14
-      Height = 23
+      Height = 22
       Top = 183
       Width = 152
       EditLabel.AnchorSideLeft.Control = InputControlMultEdit
+      EditLabel.AnchorSideRight.Control = InputControlMultEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = InputControlMultEdit
       EditLabel.Left = 14
       EditLabel.Height = 18
       EditLabel.Top = 162
-      EditLabel.Width = 166
+      EditLabel.Width = 152
       EditLabel.Caption = 'Multiply control signal by'
       EditLabel.ParentColor = False
       EditLabel.ParentFont = False
@@ -95,15 +97,17 @@ object TuningForkForm: TTuningForkForm
     end
     object InputSignalAddEdit: TLabeledEdit
       Left = 14
-      Height = 23
+      Height = 22
       Top = 231
       Width = 152
       EditLabel.AnchorSideLeft.Control = InputSignalAddEdit
+      EditLabel.AnchorSideRight.Control = InputSignalAddEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = InputSignalAddEdit
       EditLabel.Left = 14
       EditLabel.Height = 18
       EditLabel.Top = 210
-      EditLabel.Width = 135
+      EditLabel.Width = 152
       EditLabel.Caption = 'Add to control signal'
       EditLabel.ParentColor = False
       Font.Height = -11
@@ -135,8 +139,8 @@ object TuningForkForm: TTuningForkForm
     Top = 312
     Width = 192
     Caption = 'Lennard-Jones Potential'
-    ClientHeight = 390
-    ClientWidth = 190
+    ClientHeight = 389
+    ClientWidth = 188
     Color = clGreen
     Font.Height = -13
     Font.Name = 'Sans'
@@ -145,9 +149,9 @@ object TuningForkForm: TTuningForkForm
     TabOrder = 1
     object TubeDisplacementLabel: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 303
-      Width = 140
+      Width = 146
       Caption = 'Tube Displacement (nm): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -156,9 +160,9 @@ object TuningForkForm: TTuningForkForm
     end
     object DeltaKLabel: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 335
-      Width = 79
+      Width = 83
       Caption = 'Delta k (N/m): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -167,9 +171,9 @@ object TuningForkForm: TTuningForkForm
     end
     object FreqShiftLabel: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 359
-      Width = 116
+      Width = 120
       Caption = 'Frequency shift (Hz): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -193,15 +197,17 @@ object TuningForkForm: TTuningForkForm
     end
     object MaxFreqShiftEdit: TLabeledEdit
       Left = 6
-      Height = 23
+      Height = 22
       Top = 183
       Width = 80
       EditLabel.AnchorSideLeft.Control = MaxFreqShiftEdit
+      EditLabel.AnchorSideRight.Control = MaxFreqShiftEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = MaxFreqShiftEdit
       EditLabel.Left = 6
       EditLabel.Height = 39
       EditLabel.Top = 141
-      EditLabel.Width = 84
+      EditLabel.Width = 80
       EditLabel.Caption = 'Max Freq Shift (Hz)'
       EditLabel.ParentColor = False
       EditLabel.WordWrap = True
@@ -214,15 +220,17 @@ object TuningForkForm: TTuningForkForm
     end
     object LJPlotMinEdit: TLabeledEdit
       Left = 94
-      Height = 23
+      Height = 22
       Top = 183
       Width = 80
       EditLabel.AnchorSideLeft.Control = LJPlotMinEdit
+      EditLabel.AnchorSideRight.Control = LJPlotMinEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = LJPlotMinEdit
       EditLabel.Left = 94
       EditLabel.Height = 39
       EditLabel.Top = 141
-      EditLabel.Width = 86
+      EditLabel.Width = 80
       EditLabel.Caption = 'Min of LJ pot at (in nm)'
       EditLabel.ParentColor = False
       EditLabel.WordWrap = True
@@ -235,15 +243,17 @@ object TuningForkForm: TTuningForkForm
     end
     object TFForceConstEdit: TLabeledEdit
       Left = 6
-      Height = 23
+      Height = 22
       Top = 263
       Width = 80
       EditLabel.AnchorSideLeft.Control = TFForceConstEdit
+      EditLabel.AnchorSideRight.Control = TFForceConstEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = TFForceConstEdit
       EditLabel.Left = 6
       EditLabel.Height = 39
       EditLabel.Top = 221
-      EditLabel.Width = 84
+      EditLabel.Width = 80
       EditLabel.Caption = 'TF Force const (N/m)'
       EditLabel.ParentColor = False
       EditLabel.WordWrap = True
@@ -256,15 +266,17 @@ object TuningForkForm: TTuningForkForm
     end
     object TFFreqEdit: TLabeledEdit
       Left = 94
-      Height = 23
+      Height = 22
       Top = 263
       Width = 80
       EditLabel.AnchorSideLeft.Control = TFFreqEdit
+      EditLabel.AnchorSideRight.Control = TFFreqEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = TFFreqEdit
       EditLabel.Left = 94
-      EditLabel.Height = 39
-      EditLabel.Top = 221
-      EditLabel.Width = 120
+      EditLabel.Height = 60
+      EditLabel.Top = 200
+      EditLabel.Width = 80
       EditLabel.Caption = 'TF Frequency '#10'(Hz)'
       EditLabel.ParentColor = False
       EditLabel.WordWrap = True
@@ -302,16 +314,16 @@ object TuningForkForm: TTuningForkForm
     Top = 312
     Width = 185
     Caption = 'Output Transduction'
-    ClientHeight = 342
-    ClientWidth = 183
+    ClientHeight = 341
+    ClientWidth = 181
     Color = clBlue
     ParentColor = False
     TabOrder = 3
     object Label9: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 63
-      Width = 83
+      Width = 85
       Caption = 'OutputChannel'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -320,9 +332,9 @@ object TuningForkForm: TTuningForkForm
     end
     object Label3: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 257
-      Width = 77
+      Width = 81
       Caption = 'Amplifier Gain'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -331,9 +343,9 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputSignalOutputLabel: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 319
-      Width = 117
+      Width = 123
       Caption = 'Output Signal (V): 0.0'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -342,7 +354,7 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputChannelComboBox: TComboBox
       Left = 6
-      Height = 27
+      Height = 25
       Top = 81
       Width = 168
       Font.Height = -11
@@ -369,15 +381,17 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputConvFactEdit: TLabeledEdit
       Left = 6
-      Height = 23
+      Height = 22
       Top = 137
       Width = 104
       EditLabel.AnchorSideLeft.Control = OutputConvFactEdit
+      EditLabel.AnchorSideRight.Control = OutputConvFactEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = OutputConvFactEdit
       EditLabel.Left = 6
       EditLabel.Height = 18
       EditLabel.Top = 116
-      EditLabel.Width = 162
+      EditLabel.Width = 104
       EditLabel.Caption = 'Conversion Factor (V/Hz)'
       EditLabel.ParentColor = False
       Font.Height = -11
@@ -389,15 +403,17 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputAddVoltEdit: TLabeledEdit
       Left = 7
-      Height = 23
+      Height = 22
       Top = 181
       Width = 80
       EditLabel.AnchorSideLeft.Control = OutputAddVoltEdit
+      EditLabel.AnchorSideRight.Control = OutputAddVoltEdit
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = OutputAddVoltEdit
       EditLabel.Left = 7
       EditLabel.Height = 18
       EditLabel.Top = 160
-      EditLabel.Width = 131
+      EditLabel.Width = 80
       EditLabel.Caption = 'Additive voltage (V)'
       EditLabel.ParentColor = False
       Font.Height = -11
@@ -409,15 +425,17 @@ object TuningForkForm: TTuningForkForm
     end
     object LabeledEdit1: TLabeledEdit
       Left = 6
-      Height = 23
+      Height = 22
       Top = 227
       Width = 80
       EditLabel.AnchorSideLeft.Control = LabeledEdit1
+      EditLabel.AnchorSideRight.Control = LabeledEdit1
+      EditLabel.AnchorSideRight.Side = asrBottom
       EditLabel.AnchorSideBottom.Control = LabeledEdit1
       EditLabel.Left = 6
       EditLabel.Height = 18
       EditLabel.Top = 206
-      EditLabel.Width = 131
+      EditLabel.Width = 80
       EditLabel.Caption = 'Noise amplitude (V)'
       EditLabel.ParentColor = False
       Enabled = False
@@ -429,7 +447,7 @@ object TuningForkForm: TTuningForkForm
     end
     object AmpGainSpinEdit: TSpinEdit
       Left = 6
-      Height = 23
+      Height = 22
       Top = 281
       Width = 50
       Font.Height = -11
@@ -449,16 +467,16 @@ object TuningForkForm: TTuningForkForm
     Top = 320
     Width = 256
     Caption = 'Test Control Signal'
-    ClientHeight = 78
-    ClientWidth = 254
+    ClientHeight = 77
+    ClientWidth = 252
     Color = clBtnFace
     ParentColor = False
     TabOrder = 4
     object Label1: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 43
-      Width = 118
+      Width = 124
       Caption = 'Test control signal (V)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -467,20 +485,19 @@ object TuningForkForm: TTuningForkForm
     end
     object TestControlCheckBox: TCheckBox
       Left = 6
-      Height = 22
+      Height = 21
       Top = 10
-      Width = 129
+      Width = 144
       Caption = 'Test control signal?'
       Font.Height = -11
       Font.Name = 'Sans'
-      OnChange = TestControlCheckBoxChange
       OnClick = TestControlCheckBoxClick
       ParentFont = False
       TabOrder = 0
     end
     object ControlSignalSpinEdit: TFloatSpinEdit
       Left = 142
-      Height = 23
+      Height = 22
       Top = 39
       Width = 66
       DecimalPlaces = 3
@@ -501,14 +518,14 @@ object TuningForkForm: TTuningForkForm
     Top = 584
     Width = 256
     Caption = 'Scan Input Channels'
-    ClientHeight = 87
-    ClientWidth = 254
+    ClientHeight = 86
+    ClientWidth = 252
     TabOrder = 5
     object Label10: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 7
-      Width = 55
+      Width = 56
       Caption = 'X channel'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -517,9 +534,9 @@ object TuningForkForm: TTuningForkForm
     end
     object Label11: TLabel
       Left = 134
-      Height = 14
+      Height = 15
       Top = 7
-      Width = 55
+      Width = 56
       Caption = 'X channel'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -530,7 +547,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 18
       Top = 63
-      Width = 14
+      Width = 13
       Caption = 'X:'
       ParentColor = False
     end
@@ -538,13 +555,13 @@ object TuningForkForm: TTuningForkForm
       Left = 134
       Height = 18
       Top = 63
-      Width = 11
+      Width = 10
       Caption = 'Y:'
       ParentColor = False
     end
     object XChannelComboBox: TComboBox
       Left = 6
-      Height = 27
+      Height = 25
       Top = 23
       Width = 120
       Font.Height = -11
@@ -557,7 +574,7 @@ object TuningForkForm: TTuningForkForm
     end
     object YChannelComboBox: TComboBox
       Left = 134
-      Height = 27
+      Height = 25
       Top = 23
       Width = 112
       Font.Height = -11
@@ -585,9 +602,9 @@ object TuningForkForm: TTuningForkForm
   end
   object ExternalScanCheckBox: TCheckBox
     Left = 416
-    Height = 22
+    Height = 21
     Top = 320
-    Width = 190
+    Width = 163
     Caption = 'External scanning on?'
     Font.Color = clRed
     Font.Height = -13
@@ -603,14 +620,14 @@ object TuningForkForm: TTuningForkForm
     Top = 464
     Width = 193
     Caption = 'Array parameters'
-    ClientHeight = 87
-    ClientWidth = 191
+    ClientHeight = 86
+    ClientWidth = 189
     TabOrder = 8
     object Label2: TLabel
       Left = 4
-      Height = 14
+      Height = 15
       Top = 14
-      Width = 99
+      Width = 103
       Caption = 'Size of feature (u)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -619,9 +636,9 @@ object TuningForkForm: TTuningForkForm
     end
     object Label5: TLabel
       Left = 4
-      Height = 14
+      Height = 15
       Top = 42
-      Width = 65
+      Width = 68
       Caption = 'Centered at'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -630,9 +647,9 @@ object TuningForkForm: TTuningForkForm
     end
     object Label6: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 67
-      Width = 65
+      Width = 67
       Caption = 'Height (nm)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -641,7 +658,7 @@ object TuningForkForm: TTuningForkForm
     end
     object SizeofFeatureSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 23
+      Height = 22
       Top = 7
       Width = 74
       DecimalPlaces = 3
@@ -657,7 +674,7 @@ object TuningForkForm: TTuningForkForm
     end
     object CenteredAtSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 23
+      Height = 22
       Top = 35
       Width = 74
       DecimalPlaces = 3
@@ -673,7 +690,7 @@ object TuningForkForm: TTuningForkForm
     end
     object HeightSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 23
+      Height = 22
       Top = 60
       Width = 74
       Font.Height = -11
@@ -693,14 +710,14 @@ object TuningForkForm: TTuningForkForm
     Top = 344
     Width = 193
     Caption = 'Internal Position Control'
-    ClientHeight = 87
-    ClientWidth = 191
+    ClientHeight = 86
+    ClientWidth = 189
     TabOrder = 9
     object Label7: TLabel
       Left = 4
-      Height = 14
+      Height = 15
       Top = 14
-      Width = 73
+      Width = 76
       Caption = 'X position (u)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -709,9 +726,9 @@ object TuningForkForm: TTuningForkForm
     end
     object Label12: TLabel
       Left = 4
-      Height = 14
+      Height = 15
       Top = 42
-      Width = 72
+      Width = 76
       Caption = 'Y Position (u)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -720,9 +737,9 @@ object TuningForkForm: TTuningForkForm
     end
     object HeightLabel: TLabel
       Left = 6
-      Height = 14
+      Height = 15
       Top = 67
-      Width = 69
+      Width = 71
       Caption = 'Height (nm):'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -731,7 +748,7 @@ object TuningForkForm: TTuningForkForm
     end
     object XPositionSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 23
+      Height = 22
       Top = 7
       Width = 74
       DecimalPlaces = 3
@@ -747,7 +764,7 @@ object TuningForkForm: TTuningForkForm
     end
     object YPositionSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 23
+      Height = 22
       Top = 35
       Width = 74
       DecimalPlaces = 3
@@ -763,9 +780,9 @@ object TuningForkForm: TTuningForkForm
     end
   end
   object StartSimulatorBtn: TButton
-    Left = 696
+    Left = 728
     Height = 25
-    Top = 496
+    Top = 664
     Width = 185
     Caption = 'Start Simulator'
     Font.Height = -11
@@ -774,6 +791,69 @@ object TuningForkForm: TTuningForkForm
     OnClick = StartSimulatorBtnClick
     ParentFont = False
     TabOrder = 10
+  end
+  object EFMGroupBox: TGroupBox
+    Left = 696
+    Height = 122
+    Top = 432
+    Width = 256
+    Caption = 'EFM Mode'
+    ClientHeight = 103
+    ClientWidth = 252
+    TabOrder = 11
+    object EFMCheckBox: TCheckBox
+      Left = 6
+      Height = 21
+      Top = 7
+      Width = 142
+      Caption = 'Enable EFM Mode?'
+      OnClick = EFMCheckBoxClick
+      TabOrder = 0
+    end
+    object TipRadiusSpinEdit: TFloatSpinEdit
+      Left = 142
+      Height = 22
+      Top = 31
+      Width = 66
+      Font.Height = -11
+      Increment = 1
+      MaxValue = 100
+      MinValue = 1
+      OnChange = TipRadiusSpinEditChange
+      ParentFont = False
+      TabOrder = 1
+      Value = 1
+    end
+    object TipVoltageSpinEdit: TFloatSpinEdit
+      Left = 142
+      Height = 22
+      Top = 67
+      Width = 66
+      Font.Height = -11
+      Increment = 0.1
+      MaxValue = 10
+      MinValue = -10
+      OnChange = TipVoltageSpinEditChange
+      ParentFont = False
+      TabOrder = 2
+      Value = 0
+    end
+    object Label4: TLabel
+      Left = 6
+      Height = 18
+      Top = 35
+      Width = 97
+      Caption = 'Tip radius (nm)'
+      ParentColor = False
+    end
+    object Label13: TLabel
+      Left = 6
+      Height = 18
+      Top = 71
+      Width = 94
+      Caption = 'Tip Voltage (V)'
+      ParentColor = False
+    end
   end
   object FastTimer: TEpikTimer
     StringPrecision = 6

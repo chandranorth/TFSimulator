@@ -1,7 +1,7 @@
 object TuningForkForm: TTuningForkForm
-  Left = 110
+  Left = 480
   Height = 735
-  Top = 18
+  Top = 88
   Width = 957
   ActiveControl = Memo3
   Caption = 'Tuning Fork Transducer Simulator'
@@ -29,7 +29,7 @@ object TuningForkForm: TTuningForkForm
       Left = 14
       Height = 15
       Top = 71
-      Width = 113
+      Width = 112
       Caption = 'Control Signal Input'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -51,7 +51,7 @@ object TuningForkForm: TTuningForkForm
       Left = 14
       Height = 15
       Top = 263
-      Width = 171
+      Width = 170
       Caption = 'Resulting displacement (nm): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -60,7 +60,7 @@ object TuningForkForm: TTuningForkForm
     end
     object InputControlComboBox: TComboBox
       Left = 14
-      Height = 25
+      Height = 27
       Top = 95
       Width = 200
       DropDownCount = 16
@@ -74,7 +74,7 @@ object TuningForkForm: TTuningForkForm
     end
     object InputControlMultEdit: TLabeledEdit
       Left = 14
-      Height = 22
+      Height = 24
       Top = 183
       Width = 152
       EditLabel.AnchorSideLeft.Control = InputControlMultEdit
@@ -97,7 +97,7 @@ object TuningForkForm: TTuningForkForm
     end
     object InputSignalAddEdit: TLabeledEdit
       Left = 14
-      Height = 22
+      Height = 24
       Top = 231
       Width = 152
       EditLabel.AnchorSideLeft.Control = InputSignalAddEdit
@@ -151,7 +151,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 15
       Top = 303
-      Width = 146
+      Width = 145
       Caption = 'Tube Displacement (nm): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -173,7 +173,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 15
       Top = 359
-      Width = 120
+      Width = 121
       Caption = 'Frequency shift (Hz): '
       Font.Height = -11
       Font.Name = 'Sans'
@@ -197,7 +197,7 @@ object TuningForkForm: TTuningForkForm
     end
     object MaxFreqShiftEdit: TLabeledEdit
       Left = 6
-      Height = 22
+      Height = 24
       Top = 183
       Width = 80
       EditLabel.AnchorSideLeft.Control = MaxFreqShiftEdit
@@ -220,7 +220,7 @@ object TuningForkForm: TTuningForkForm
     end
     object LJPlotMinEdit: TLabeledEdit
       Left = 94
-      Height = 22
+      Height = 24
       Top = 183
       Width = 80
       EditLabel.AnchorSideLeft.Control = LJPlotMinEdit
@@ -243,7 +243,7 @@ object TuningForkForm: TTuningForkForm
     end
     object TFForceConstEdit: TLabeledEdit
       Left = 6
-      Height = 22
+      Height = 24
       Top = 263
       Width = 80
       EditLabel.AnchorSideLeft.Control = TFForceConstEdit
@@ -266,7 +266,7 @@ object TuningForkForm: TTuningForkForm
     end
     object TFFreqEdit: TLabeledEdit
       Left = 94
-      Height = 22
+      Height = 24
       Top = 263
       Width = 80
       EditLabel.AnchorSideLeft.Control = TFFreqEdit
@@ -334,7 +334,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 15
       Top = 257
-      Width = 81
+      Width = 82
       Caption = 'Amplifier Gain'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -354,7 +354,7 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputChannelComboBox: TComboBox
       Left = 6
-      Height = 25
+      Height = 27
       Top = 81
       Width = 168
       Font.Height = -11
@@ -381,7 +381,7 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputConvFactEdit: TLabeledEdit
       Left = 6
-      Height = 22
+      Height = 24
       Top = 137
       Width = 104
       EditLabel.AnchorSideLeft.Control = OutputConvFactEdit
@@ -403,7 +403,7 @@ object TuningForkForm: TTuningForkForm
     end
     object OutputAddVoltEdit: TLabeledEdit
       Left = 7
-      Height = 22
+      Height = 24
       Top = 181
       Width = 80
       EditLabel.AnchorSideLeft.Control = OutputAddVoltEdit
@@ -425,7 +425,7 @@ object TuningForkForm: TTuningForkForm
     end
     object LabeledEdit1: TLabeledEdit
       Left = 6
-      Height = 22
+      Height = 24
       Top = 227
       Width = 80
       EditLabel.AnchorSideLeft.Control = LabeledEdit1
@@ -447,7 +447,7 @@ object TuningForkForm: TTuningForkForm
     end
     object AmpGainSpinEdit: TSpinEdit
       Left = 6
-      Height = 22
+      Height = 24
       Top = 281
       Width = 50
       Font.Height = -11
@@ -476,7 +476,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 15
       Top = 43
-      Width = 124
+      Width = 123
       Caption = 'Test control signal (V)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -485,9 +485,9 @@ object TuningForkForm: TTuningForkForm
     end
     object TestControlCheckBox: TCheckBox
       Left = 6
-      Height = 21
+      Height = 24
       Top = 10
-      Width = 144
+      Width = 154
       Caption = 'Test control signal?'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -497,7 +497,7 @@ object TuningForkForm: TTuningForkForm
     end
     object ControlSignalSpinEdit: TFloatSpinEdit
       Left = 142
-      Height = 22
+      Height = 24
       Top = 39
       Width = 66
       DecimalPlaces = 3
@@ -525,7 +525,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 15
       Top = 7
-      Width = 56
+      Width = 57
       Caption = 'X channel'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -536,7 +536,7 @@ object TuningForkForm: TTuningForkForm
       Left = 134
       Height = 15
       Top = 7
-      Width = 56
+      Width = 57
       Caption = 'X channel'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -547,7 +547,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 18
       Top = 63
-      Width = 13
+      Width = 14
       Caption = 'X:'
       ParentColor = False
     end
@@ -555,13 +555,13 @@ object TuningForkForm: TTuningForkForm
       Left = 134
       Height = 18
       Top = 63
-      Width = 10
+      Width = 13
       Caption = 'Y:'
       ParentColor = False
     end
     object XChannelComboBox: TComboBox
       Left = 6
-      Height = 25
+      Height = 27
       Top = 23
       Width = 120
       Font.Height = -11
@@ -574,7 +574,7 @@ object TuningForkForm: TTuningForkForm
     end
     object YChannelComboBox: TComboBox
       Left = 134
-      Height = 25
+      Height = 27
       Top = 23
       Width = 112
       Font.Height = -11
@@ -602,9 +602,9 @@ object TuningForkForm: TTuningForkForm
   end
   object ExternalScanCheckBox: TCheckBox
     Left = 416
-    Height = 21
+    Height = 24
     Top = 320
-    Width = 163
+    Width = 169
     Caption = 'External scanning on?'
     Font.Color = clRed
     Font.Height = -13
@@ -658,7 +658,7 @@ object TuningForkForm: TTuningForkForm
     end
     object SizeofFeatureSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 22
+      Height = 24
       Top = 7
       Width = 74
       DecimalPlaces = 3
@@ -674,7 +674,7 @@ object TuningForkForm: TTuningForkForm
     end
     object CenteredAtSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 22
+      Height = 24
       Top = 35
       Width = 74
       DecimalPlaces = 3
@@ -690,7 +690,7 @@ object TuningForkForm: TTuningForkForm
     end
     object HeightSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 22
+      Height = 24
       Top = 60
       Width = 74
       Font.Height = -11
@@ -728,7 +728,7 @@ object TuningForkForm: TTuningForkForm
       Left = 4
       Height = 15
       Top = 42
-      Width = 76
+      Width = 75
       Caption = 'Y Position (u)'
       Font.Height = -11
       Font.Name = 'Sans'
@@ -748,7 +748,7 @@ object TuningForkForm: TTuningForkForm
     end
     object XPositionSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 22
+      Height = 24
       Top = 7
       Width = 74
       DecimalPlaces = 3
@@ -764,7 +764,7 @@ object TuningForkForm: TTuningForkForm
     end
     object YPositionSpinEdit: TFloatSpinEdit
       Left = 110
-      Height = 22
+      Height = 24
       Top = 35
       Width = 74
       DecimalPlaces = 3
@@ -803,16 +803,16 @@ object TuningForkForm: TTuningForkForm
     TabOrder = 11
     object EFMCheckBox: TCheckBox
       Left = 6
-      Height = 21
+      Height = 24
       Top = 7
-      Width = 142
+      Width = 151
       Caption = 'Enable EFM Mode?'
       OnClick = EFMCheckBoxClick
       TabOrder = 0
     end
     object TipRadiusSpinEdit: TFloatSpinEdit
       Left = 142
-      Height = 22
+      Height = 24
       Top = 31
       Width = 66
       Font.Height = -11
@@ -826,7 +826,7 @@ object TuningForkForm: TTuningForkForm
     end
     object TipVoltageSpinEdit: TFloatSpinEdit
       Left = 142
-      Height = 22
+      Height = 24
       Top = 67
       Width = 66
       Font.Height = -11
@@ -842,7 +842,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 18
       Top = 35
-      Width = 97
+      Width = 101
       Caption = 'Tip radius (nm)'
       ParentColor = False
     end
@@ -850,7 +850,7 @@ object TuningForkForm: TTuningForkForm
       Left = 6
       Height = 18
       Top = 71
-      Width = 94
+      Width = 100
       Caption = 'Tip Voltage (V)'
       ParentColor = False
     end

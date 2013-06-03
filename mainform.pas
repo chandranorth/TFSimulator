@@ -145,7 +145,7 @@ var
   procedure UpdateFrequencyParameters;
   begin
     LJ_FreqShiftMultFact:= 1.605*delta_f0*intpower(x_0,14);
-    EFM_FreqShiftMultFact:=1.8908E16*TipRadius*TipRadius*TipVoltage*TipVoltage*
+    EFM_FreqShiftMultFact:=-1.3908E-2*TipRadius*TipRadius*TipVoltage*TipVoltage*
                              (TFBaseFrequency/TFForceConstant);
   end;
 
@@ -450,13 +450,13 @@ end;
 
 procedure TTuningForkForm.DataTimerTimer(Sender: TObject);
 begin
-   XChannelIndicator.Caption:='X: '+ FloatToStr(XPosition);
-   YChannelIndicator.Caption:='X: '+ FloatToStr(YPosition);
-   FreqShiftLabel.Caption:='Frequency shift (Hz): ' + FloatToStr(FrequencyShift);
-   DeltaKLabel.Caption:='Delta K (N/m): ' + FloatToStr(2*FrequencyShift*(TFForceConstant/TFBaseFrequency));
-   OutputSignalOutputLabel.Caption:= 'Output signal (V): ' + FloatToStr(OutputValue);
-   HeightLabel.Caption:='Height (nm): ' + FloatToStr(XHeight);
-   TubeDisplacementLabel.Caption:='Tube displacement (nm): ' + FloatToStr(TubeDisplacement);
+   XChannelIndicator.Caption:='X: '+ FloatToStrF(XPosition, ffFixed, 10, 5);
+   YChannelIndicator.Caption:='Y: '+ FloatToStrF(YPosition, ffFixed, 10, 5);
+   FreqShiftLabel.Caption:='Frequency shift (Hz): ' + FloatToStrF(FrequencyShift, ffFixed, 10, 5);
+   DeltaKLabel.Caption:='Delta K (N/m): ' + FloatToStrF(2*FrequencyShift*(TFForceConstant/TFBaseFrequency), ffFixed, 10, 5);
+   OutputSignalOutputLabel.Caption:= 'Output signal (V): ' + FloatToStrF(OutputValue, ffFixed, 10, 5);
+   HeightLabel.Caption:='Height (nm): ' + FloatToStrF(XHeight, ffFixed, 10, 5);
+   TubeDisplacementLabel.Caption:='Tube displacement (nm): ' + FloatToStrF(TubeDisplacement, ffFixed, 10, 5);
 end;
 
 procedure TTuningForkForm.EFMCheckBoxClick(Sender: TObject);

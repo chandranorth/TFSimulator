@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
 <CodeBlocks_layout_file>
 	<ActiveTarget name="Release" />
-	<File name="main.c" open="1" top="0" tabpos="3">
-		<Cursor position="2889" topLine="18" />
+	<File name="main.c" open="1" top="1" tabpos="3">
+		<Cursor position="13945" topLine="39" />
 	</File>
 	<File name="queue.c" open="1" top="0" tabpos="1">
 		<Cursor position="1060" topLine="0" />
 	</File>
-	<File name="rtai_spm.h" open="1" top="1" tabpos="2">
-		<Cursor position="472" topLine="27" />
+	<File name="rtai_spm.h" open="1" top="0" tabpos="2">
+		<Cursor position="502" topLine="15" />
 	</File>
 </CodeBlocks_layout_file>

@@ -328,18 +328,19 @@ int tf_loop()
         XModPosition = XPosition - XIntegerPosition;
         YModPosition = YPosition - YIntegerPosition;
         XHeight = 0.0;
+        FrequencyShift=0;
 
         if ((XModPosition<=((FeatureSize/2)+FeatureCenter))&&(XModPosition>=(FeatureCenter-(FeatureSize/2)))&&(YModPosition<=((FeatureSize/2)+FeatureCenter))&&(YModPosition>=(FeatureCenter-(FeatureSize/2))))
             {
              XHeight= FeatureHeight;
+            if (EFM_Mode && ((XIntegerPosition+YIntegerPosition) % 2))
+               {
+               FrequencyShift =(EFM_FreqShiftMultFact*(TipRadius+2.*delta_X))/(delta_X*delta_X*(delta_X+TipRadius)*(delta_X+TipRadius));
+              }
             }
         delta_X =((TubeDisplacement-XHeight)<min_delta_x)? min_delta_x:(TubeDisplacement-XHeight);
-        FrequencyShift = (double) LJ_FreqShiftMultFact*((13/powl(delta_X, 14)) - (7/(x_06*powl(delta_X,8))));
+        FrequencyShift += (double) LJ_FreqShiftMultFact*((13/powl(delta_X, 14)) - (7/(x_06*powl(delta_X,8)))); //add to previous value
         //FrequencyShift = (double) (LJ_FreqShiftMultFact*powl(delta_X, 14))*(13 - (7/x_06)*powl(delta_X,6));
-        if (EFM_Mode && (((XIntegerPosition+YIntegerPosition) % 2)!=0))
-           {
-               FrequencyShift +=(EFM_FreqShiftMultFact*(TipRadius+2.*delta_X))/(delta_X*delta_X*(delta_X+TipRadius)*(delta_X+TipRadius));
-           }
         OutputValue = AmplifierGainSign*OutputConversionFactor*FrequencyShift;
         OutputValue = (OutputValue>MaxOutputVoltage)? MaxOutputVoltage:OutputValue;
         OutputValue = (OutputValue<MinOutputVoltage)? MinOutputVoltage:OutputValue;

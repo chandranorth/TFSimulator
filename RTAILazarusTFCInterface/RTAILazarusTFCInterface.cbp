@@ -28,8 +28,8 @@
 				<Option compiler="gcc" />
 				<Option createDefFile="1" />
 				<Compiler>
-					<Add option="-O2" />
-					<Add directory="/home/chandra/CodeBlocks Projects/RTAILazarusTFCInterface/" />
+					<Add option="-O3" />
+					<Add directory="/home/chandra/LazarusPrograms/TuningForkSimulator/RTAILazarusTFCInterface" />
 					<Add directory="/usr/realtime/include" />
 					<Add directory="/usr/realtime/bin" />
 				</Compiler>

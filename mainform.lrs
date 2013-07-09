@@ -1,28 +1,28 @@
 { This is an automatically generated lazarus resource file }
 
 LazarusResources.Add('TTuningForkForm','FORMDATA',[
-  'TPF0'#15'TTuningForkForm'#14'TuningForkForm'#4'Left'#3#224#1#6'Height'#3#223
-  +#2#3'Top'#2'X'#5'Width'#3#189#3#13'ActiveControl'#7#5'Memo3'#7'Caption'#6' T'
-  +'uning Fork Transducer Simulator'#12'ClientHeight'#3#223#2#11'ClientWidth'#3
+  'TPF0'#15'TTuningForkForm'#14'TuningForkForm'#4'Left'#3#26#3#6'Height'#3#223#2
+  +#3'Top'#2's'#5'Width'#3#189#3#13'ActiveControl'#7#5'Memo3'#7'Caption'#6' Tun'
+  +'ing Fork Transducer Simulator'#12'ClientHeight'#3#223#2#11'ClientWidth'#3
   +#189#3#8'OnCreate'#7#10'FormCreate'#10'LCLVersion'#6#7'1.0.8.0'#0#9'TGroupBo'
   +'x'#13'InputGroupBox'#4'Left'#3#184#2#6'Height'#3'0'#1#3'Top'#2#8#5'Width'#3
   +#0#1#20'BorderSpacing.Bottom'#2#1#20'BorderSpacing.Around'#2#1#7'Caption'#6
   +#29'Input Control---Voltage to nm'#12'ClientHeight'#3#29#1#11'ClientWidth'#3
   +#252#0#5'Color'#7#5'clRed'#11'Font.Height'#2#243#9'Font.Name'#6#4'Sans'#11'P'
   +'arentColor'#8#10'ParentFont'#8#8'TabOrder'#2#0#0#6'TLabel'#6'Label8'#4'Left'
-  +#2#14#6'Height'#2#15#3'Top'#2'G'#5'Width'#2'p'#7'Caption'#6#20'Control Signa'
+  +#2#14#6'Height'#2#15#3'Top'#2'G'#5'Width'#2'q'#7'Caption'#6#20'Control Signa'
   +'l Input'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10
   +'ParentFont'#8#0#0#6'TLabel'#24'ControlSignalOutputLabel'#4'Left'#2#14#6'Hei'
   +'ght'#2#15#3'Top'#3#135#0#5'Width'#2'~'#7'Caption'#6#23'Control Signal (V): '
   +'0.0'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'Pare'
   +'ntFont'#8#0#0#6'TLabel'#15'ResultDispLabel'#4'Left'#2#14#6'Height'#2#15#3'T'
-  +'op'#3#7#1#5'Width'#3#170#0#7'Caption'#6#29'Resulting displacement (nm): '#11
+  +'op'#3#7#1#5'Width'#3#171#0#7'Caption'#6#29'Resulting displacement (nm): '#11
   +'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8
-  +#0#0#9'TComboBox'#20'InputControlComboBox'#4'Left'#2#14#6'Height'#2#27#3'Top'
+  +#0#0#9'TComboBox'#20'InputControlComboBox'#4'Left'#2#14#6'Height'#2#25#3'Top'
   +#2'_'#5'Width'#3#200#0#13'DropDownCount'#2#16#11'Font.Height'#2#245#9'Font.N'
   +'ame'#6#4'Sans'#10'ItemHeight'#2#0#8'OnSelect'#7#26'InputControlComboBoxSele'
   +'ct'#10'ParentFont'#8#8'TabOrder'#2#0#4'Text'#6#20'Choose input channel'#0#0
-  +#12'TLabeledEdit'#20'InputControlMultEdit'#4'Left'#2#14#6'Height'#2#24#3'Top'
+  +#12'TLabeledEdit'#20'InputControlMultEdit'#4'Left'#2#14#6'Height'#2#22#3'Top'
   +#3#183#0#5'Width'#3#152#0' EditLabel.AnchorSideLeft.Control'#7#20'InputContr'
   +'olMultEdit!EditLabel.AnchorSideRight.Control'#7#20'InputControlMultEdit'#30
   +'EditLabel.AnchorSideRight.Side'#7#9'asrBottom"EditLabel.AnchorSideBottom.Co'
@@ -32,7 +32,7 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'ditLabel.ParentFont'#8#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'Pare'
   +'ntFont'#8#8'TabOrder'#2#1#4'Text'#6#3'100'#10'OnKeyPress'#7#28'InputControl'
   +'MultEditKeyPress'#0#0#12'TLabeledEdit'#18'InputSignalAddEdit'#4'Left'#2#14#6
-  +'Height'#2#24#3'Top'#3#231#0#5'Width'#3#152#0' EditLabel.AnchorSideLeft.Cont'
+  +'Height'#2#22#3'Top'#3#231#0#5'Width'#3#152#0' EditLabel.AnchorSideLeft.Cont'
   +'rol'#7#18'InputSignalAddEdit!EditLabel.AnchorSideRight.Control'#7#18'InputS'
   +'ignalAddEdit'#30'EditLabel.AnchorSideRight.Side'#7#9'asrBottom"EditLabel.An'
   +'chorSideBottom.Control'#7#18'InputSignalAddEdit'#14'EditLabel.Left'#2#14#16
@@ -48,20 +48,20 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'Caption'#6#23'Lennard-Jones Potential'#12'ClientHeight'#3#133#1#11'ClientWi'
   +'dth'#3#188#0#5'Color'#7#7'clGreen'#11'Font.Height'#2#243#9'Font.Name'#6#4'S'
   +'ans'#11'ParentColor'#8#10'ParentFont'#8#8'TabOrder'#2#1#0#6'TLabel'#21'Tube'
-  +'DisplacementLabel'#4'Left'#2#6#6'Height'#2#15#3'Top'#3'/'#1#5'Width'#3#145#0
+  +'DisplacementLabel'#4'Left'#2#6#6'Height'#2#15#3'Top'#3'/'#1#5'Width'#3#146#0
   +#7'Caption'#6#24'Tube Displacement (nm): '#11'Font.Height'#2#245#9'Font.Name'
   +#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#11'DeltaKLabel'#4
   +'Left'#2#6#6'Height'#2#15#3'Top'#3'O'#1#5'Width'#2'S'#7'Caption'#6#15'Delta '
   +'k (N/m): '#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10
   +'ParentFont'#8#0#0#6'TLabel'#14'FreqShiftLabel'#4'Left'#2#6#6'Height'#2#15#3
-  +'Top'#3'g'#1#5'Width'#2'y'#7'Caption'#6#22'Frequency shift (Hz): '#11'Font.H'
+  +'Top'#3'g'#1#5'Width'#2'x'#7'Caption'#6#22'Frequency shift (Hz): '#11'Font.H'
   +'eight'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#5
   +'TMemo'#5'Memo2'#4'Left'#2#6#6'Height'#2'n'#3'Top'#2#10#5'Width'#3#176#0#5'C'
   +'olor'#7#8'clYellow'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#13'Lines.S'
   +'trings'#1#6#148'nm displacement of z scan tube is converted to a change in '
   +'effective spring constant of the tuning fork, assuming a Lennard-Jones type'
   +' potential of '#6#20'V(x) = A/x^12 - B/^6'#0#10'ParentFont'#8#8'TabOrder'#2
-  +#0#0#0#12'TLabeledEdit'#16'MaxFreqShiftEdit'#4'Left'#2#6#6'Height'#2#24#3'To'
+  +#0#0#0#12'TLabeledEdit'#16'MaxFreqShiftEdit'#4'Left'#2#6#6'Height'#2#22#3'To'
   +'p'#3#183#0#5'Width'#2'P EditLabel.AnchorSideLeft.Control'#7#16'MaxFreqShift'
   +'Edit!EditLabel.AnchorSideRight.Control'#7#16'MaxFreqShiftEdit'#30'EditLabel'
   +'.AnchorSideRight.Side'#7#9'asrBottom"EditLabel.AnchorSideBottom.Control'#7
@@ -70,67 +70,67 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'ax Freq Shift (Hz)'#21'EditLabel.ParentColor'#8#18'EditLabel.WordWrap'#9#11
   +'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#1#4
   +'Text'#6#1'3'#10'OnKeyPress'#7#24'MaxFreqShiftEditKeyPress'#0#0#12'TLabeledE'
-  +'dit'#13'LJPlotMinEdit'#4'Left'#2'^'#6'Height'#2#24#3'Top'#3#183#0#5'Width'#2
+  +'dit'#13'LJPlotMinEdit'#4'Left'#2'^'#6'Height'#2#22#3'Top'#3#183#0#5'Width'#2
   +'P EditLabel.AnchorSideLeft.Control'#7#13'LJPlotMinEdit!EditLabel.AnchorSide'
   +'Right.Control'#7#13'LJPlotMinEdit'#30'EditLabel.AnchorSideRight.Side'#7#9'a'
   +'srBottom"EditLabel.AnchorSideBottom.Control'#7#13'LJPlotMinEdit'#14'EditLab'
   +'el.Left'#2'^'#16'EditLabel.Height'#2''''#13'EditLabel.Top'#3#141#0#15'EditL'
-  +'abel.Width'#2'P'#17'EditLabel.Caption'#6#24'Min of LJ pot at (in nm)'#21'Ed'
-  +'itLabel.ParentColor'#8#18'EditLabel.WordWrap'#9#11'Font.Height'#2#245#9'Fon'
-  +'t.Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#2#4'Text'#6#1'2'#10'OnKeyP'
-  +'ress'#7#21'LJPlotMinEditKeyPress'#0#0#12'TLabeledEdit'#16'TFForceConstEdit'
-  +#4'Left'#2#6#6'Height'#2#24#3'Top'#3#7#1#5'Width'#2'P EditLabel.AnchorSideLe'
-  +'ft.Control'#7#16'TFForceConstEdit!EditLabel.AnchorSideRight.Control'#7#16'T'
-  +'FForceConstEdit'#30'EditLabel.AnchorSideRight.Side'#7#9'asrBottom"EditLabel'
-  +'.AnchorSideBottom.Control'#7#16'TFForceConstEdit'#14'EditLabel.Left'#2#6#16
-  +'EditLabel.Height'#2''''#13'EditLabel.Top'#3#221#0#15'EditLabel.Width'#2'P'
-  +#17'EditLabel.Caption'#6#20'TF Force const (N/m)'#21'EditLabel.ParentColor'#8
-  +#18'EditLabel.WordWrap'#9#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'Pa'
-  +'rentFont'#8#8'TabOrder'#2#3#4'Text'#6#4'1800'#10'OnKeyPress'#7#24'TFForceCo'
-  +'nstEditKeyPress'#0#0#12'TLabeledEdit'#10'TFFreqEdit'#4'Left'#2'^'#6'Height'
-  +#2#24#3'Top'#3#7#1#5'Width'#2'P EditLabel.AnchorSideLeft.Control'#7#10'TFFre'
-  +'qEdit!EditLabel.AnchorSideRight.Control'#7#10'TFFreqEdit'#30'EditLabel.Anch'
-  +'orSideRight.Side'#7#9'asrBottom"EditLabel.AnchorSideBottom.Control'#7#10'TF'
-  +'FreqEdit'#14'EditLabel.Left'#2'^'#16'EditLabel.Height'#2'<'#13'EditLabel.To'
-  +'p'#3#200#0#15'EditLabel.Width'#2'P'#17'EditLabel.Caption'#6#18'TF Frequency'
-  +' '#10'(Hz)'#21'EditLabel.ParentColor'#8#18'EditLabel.WordWrap'#9#11'Font.He'
-  +'ight'#2#245#9'Font.Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#4#4'Text'
-  +#6#5'32768'#10'OnKeyPress'#7#18'TFFreqEditKeyPress'#0#0#0#5'TMemo'#5'Memo3'#4
-  +'Left'#2#16#6'Height'#3'*'#1#3'Top'#2#8#5'Width'#3#152#2#5'Color'#7#8'clYell'
-  +'ow'#13'Lines.Strings'#1#6'8Program to simulate response of a tuning fork tr'
-  +'ansducer'#6#0#6#23'There are three inputs:'#6#182'1.  A control voltage fro'
-  +'m a that controls the height of the tip above the surface.  The program con'
-  +'verts this voltage into a distance in nm based on user defined conversion f'
-  +'actors.'#6#0#6#137'2.  Two voltages that represent the x and y positions of'
-  +' the scan tube.  This determines the height based on the user defined topog'
-  +'raphy.'#6#0#12'+'#1#0#0'The potential between the tip and the surface is as'
-  +'sumed to be a Lennard-Jones type potential, from which a force can be obtai'
-  +'ned.  This force leads to a change in the effective spring constant, and he'
-  +'nce the frequency of oscillation, which is what is returned by the program '
-  +'on the output channel. '#6#0#12#13#1#0#0'The parameters A and B of the Lenn'
-  +'ard-Jones potential are determined from the experimentally determined sprin'
-  +'g constant of the tuning fork, the maximum frequency shift on coarse approa'
-  +'ch, and the distance at which the minimum of the Lennard-Jones potential is'
-  +' obtained.'#0#8'TabOrder'#2#2#0#0#9'TGroupBox'#24'OutputTransducerGroupBox'
-  +#4'Left'#3#216#0#6'Height'#3'h'#1#3'Top'#3'8'#1#5'Width'#3#185#0#7'Caption'#6
-  +#19'Output Transduction'#12'ClientHeight'#3'U'#1#11'ClientWidth'#3#181#0#5'C'
-  +'olor'#7#6'clBlue'#11'ParentColor'#8#8'TabOrder'#2#3#0#6'TLabel'#6'Label9'#4
-  +'Left'#2#6#6'Height'#2#15#3'Top'#2'?'#5'Width'#2'U'#7'Caption'#6#13'OutputCh'
-  +'annel'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'Pa'
-  +'rentFont'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#6#6'Height'#2#15#3'Top'#3#1#1
-  +#5'Width'#2'R'#7'Caption'#6#14'Amplifier Gain'#11'Font.Height'#2#245#9'Font.'
-  +'Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#23'OutputS'
-  +'ignalOutputLabel'#4'Left'#2#6#6'Height'#2#15#3'Top'#3'?'#1#5'Width'#2'{'#7
-  +'Caption'#6#22'Output Signal (V): 0.0'#11'Font.Height'#2#245#9'Font.Name'#6#4
+  +'abel.Width'#2'P'#17'EditLabel.Caption'#6#22'Min of Freq at (in nm)'#21'Edit'
+  +'Label.ParentColor'#8#18'EditLabel.WordWrap'#9#11'Font.Height'#2#245#9'Font.'
+  +'Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#2#4'Text'#6#1'2'#10'OnKeyPre'
+  +'ss'#7#21'LJPlotMinEditKeyPress'#0#0#12'TLabeledEdit'#16'TFForceConstEdit'#4
+  +'Left'#2#6#6'Height'#2#22#3'Top'#3#7#1#5'Width'#2'P EditLabel.AnchorSideLeft'
+  +'.Control'#7#16'TFForceConstEdit!EditLabel.AnchorSideRight.Control'#7#16'TFF'
+  +'orceConstEdit'#30'EditLabel.AnchorSideRight.Side'#7#9'asrBottom"EditLabel.A'
+  +'nchorSideBottom.Control'#7#16'TFForceConstEdit'#14'EditLabel.Left'#2#6#16'E'
+  +'ditLabel.Height'#2''''#13'EditLabel.Top'#3#221#0#15'EditLabel.Width'#2'P'#17
+  +'EditLabel.Caption'#6#20'TF Force const (N/m)'#21'EditLabel.ParentColor'#8#18
+  +'EditLabel.WordWrap'#9#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'Paren'
+  +'tFont'#8#8'TabOrder'#2#3#4'Text'#6#4'1800'#10'OnKeyPress'#7#24'TFForceConst'
+  +'EditKeyPress'#0#0#12'TLabeledEdit'#10'TFFreqEdit'#4'Left'#2'^'#6'Height'#2
+  +#22#3'Top'#3#7#1#5'Width'#2'P EditLabel.AnchorSideLeft.Control'#7#10'TFFreqE'
+  +'dit!EditLabel.AnchorSideRight.Control'#7#10'TFFreqEdit'#30'EditLabel.Anchor'
+  +'SideRight.Side'#7#9'asrBottom"EditLabel.AnchorSideBottom.Control'#7#10'TFFr'
+  +'eqEdit'#14'EditLabel.Left'#2'^'#16'EditLabel.Height'#2'<'#13'EditLabel.Top'
+  +#3#200#0#15'EditLabel.Width'#2'P'#17'EditLabel.Caption'#6#18'TF Frequency '
+  +#10'(Hz)'#21'EditLabel.ParentColor'#8#18'EditLabel.WordWrap'#9#11'Font.Heigh'
+  +'t'#2#245#9'Font.Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#4#4'Text'#6#5
+  +'32768'#10'OnKeyPress'#7#18'TFFreqEditKeyPress'#0#0#0#5'TMemo'#5'Memo3'#4'Le'
+  +'ft'#2#16#6'Height'#3'*'#1#3'Top'#2#8#5'Width'#3#152#2#5'Color'#7#8'clYellow'
+  +#13'Lines.Strings'#1#6'8Program to simulate response of a tuning fork transd'
+  +'ucer'#6#0#6#23'There are three inputs:'#6#182'1.  A control voltage from a '
+  +'that controls the height of the tip above the surface.  The program convert'
+  +'s this voltage into a distance in nm based on user defined conversion facto'
+  +'rs.'#6#0#6#137'2.  Two voltages that represent the x and y positions of the'
+  +' scan tube.  This determines the height based on the user defined topograph'
+  +'y.'#6#0#12'+'#1#0#0'The potential between the tip and the surface is assume'
+  +'d to be a Lennard-Jones type potential, from which a force can be obtained.'
+  +'  This force leads to a change in the effective spring constant, and hence '
+  +'the frequency of oscillation, which is what is returned by the program on t'
+  +'he output channel. '#6#0#12#13#1#0#0'The parameters A and B of the Lennard-'
+  +'Jones potential are determined from the experimentally determined spring co'
+  +'nstant of the tuning fork, the maximum frequency shift on coarse approach, '
+  +'and the distance at which the minimum of the Lennard-Jones potential is obt'
+  +'ained.'#0#8'TabOrder'#2#2#0#0#9'TGroupBox'#24'OutputTransducerGroupBox'#4'L'
+  +'eft'#3#216#0#6'Height'#3'h'#1#3'Top'#3'8'#1#5'Width'#3#185#0#7'Caption'#6#19
+  +'Output Transduction'#12'ClientHeight'#3'U'#1#11'ClientWidth'#3#181#0#5'Colo'
+  +'r'#7#6'clBlue'#11'ParentColor'#8#8'TabOrder'#2#3#0#6'TLabel'#6'Label9'#4'Le'
+  +'ft'#2#6#6'Height'#2#15#3'Top'#2'?'#5'Width'#2'U'#7'Caption'#6#13'OutputChan'
+  +'nel'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'Pare'
+  +'ntFont'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#6#6'Height'#2#15#3'Top'#3#1#1#5
+  +'Width'#2'Q'#7'Caption'#6#14'Amplifier Gain'#11'Font.Height'#2#245#9'Font.Na'
+  +'me'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#23'OutputSig'
+  +'nalOutputLabel'#4'Left'#2#6#6'Height'#2#15#3'Top'#3'?'#1#5'Width'#2'{'#7'Ca'
+  +'ption'#6#22'Output Signal (V): 0.0'#11'Font.Height'#2#245#9'Font.Name'#6#4
   +'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#9'TComboBox'#21'OutputChannelC'
-  +'omboBox'#4'Left'#2#6#6'Height'#2#27#3'Top'#2'Q'#5'Width'#3#168#0#11'Font.He'
+  +'omboBox'#4'Left'#2#6#6'Height'#2#25#3'Top'#2'Q'#5'Width'#3#168#0#11'Font.He'
   +'ight'#2#245#9'Font.Name'#6#4'Sans'#10'ItemHeight'#2#0#8'OnSelect'#7#27'Outp'
   +'utChannelComboBoxSelect'#10'ParentFont'#8#8'TabOrder'#2#0#4'Text'#6#21'Choo'
   +'se output channel'#0#0#5'TMemo'#5'Memo4'#4'Left'#2#6#6'Height'#2'-'#3'Top'#2
   +#10#5'Width'#3#168#0#5'Color'#7#8'clYellow'#11'Font.Height'#2#245#9'Font.Nam'
   +'e'#6#4'Sans'#13'Lines.Strings'#1#6'5Factors to convert frequency shift to o'
   ,'utput voltage.'#0#10'ParentFont'#8#8'TabOrder'#2#1#0#0#12'TLabeledEdit'#18
-  +'OutputConvFactEdit'#4'Left'#2#6#6'Height'#2#24#3'Top'#3#137#0#5'Width'#2'h '
+  +'OutputConvFactEdit'#4'Left'#2#6#6'Height'#2#22#3'Top'#3#137#0#5'Width'#2'h '
   +'EditLabel.AnchorSideLeft.Control'#7#18'OutputConvFactEdit!EditLabel.AnchorS'
   +'ideRight.Control'#7#18'OutputConvFactEdit'#30'EditLabel.AnchorSideRight.Sid'
   +'e'#7#9'asrBottom"EditLabel.AnchorSideBottom.Control'#7#18'OutputConvFactEdi'
@@ -139,7 +139,7 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +')'#21'EditLabel.ParentColor'#8#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'
   +#10'ParentFont'#8#8'TabOrder'#2#2#4'Text'#6#5'1.831'#10'OnKeyPress'#7#26'Out'
   +'putConvFactEditKeyPress'#0#0#12'TLabeledEdit'#17'OutputAddVoltEdit'#4'Left'
-  +#2#7#6'Height'#2#24#3'Top'#3#181#0#5'Width'#2'P EditLabel.AnchorSideLeft.Con'
+  +#2#7#6'Height'#2#22#3'Top'#3#181#0#5'Width'#2'P EditLabel.AnchorSideLeft.Con'
   +'trol'#7#17'OutputAddVoltEdit!EditLabel.AnchorSideRight.Control'#7#17'Output'
   +'AddVoltEdit'#30'EditLabel.AnchorSideRight.Side'#7#9'asrBottom"EditLabel.Anc'
   +'horSideBottom.Control'#7#17'OutputAddVoltEdit'#14'EditLabel.Left'#2#7#16'Ed'
@@ -147,7 +147,7 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'EditLabel.Caption'#6#20'Additive voltage (V)'#21'EditLabel.ParentColor'#8#11
   +'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'ParentFont'#8#8'TabOrder'#2#3#4
   +'Text'#6#1'0'#10'OnKeyPress'#7#25'OutputAddVoltEditKeyPress'#0#0#12'TLabeled'
-  +'Edit'#12'LabeledEdit1'#4'Left'#2#6#6'Height'#2#24#3'Top'#3#227#0#5'Width'#2
+  +'Edit'#12'LabeledEdit1'#4'Left'#2#6#6'Height'#2#22#3'Top'#3#227#0#5'Width'#2
   +'P EditLabel.AnchorSideLeft.Control'#7#12'LabeledEdit1!EditLabel.AnchorSideR'
   +'ight.Control'#7#12'LabeledEdit1'#30'EditLabel.AnchorSideRight.Side'#7#9'asr'
   +'Bottom"EditLabel.AnchorSideBottom.Control'#7#12'LabeledEdit1'#14'EditLabel.'
@@ -155,20 +155,20 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'Width'#2'P'#17'EditLabel.Caption'#6#19'Noise amplitude (V)'#21'EditLabel.Pa'
   +'rentColor'#8#7'Enabled'#8#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'P'
   +'arentFont'#8#8'TabOrder'#2#4#4'Text'#6#1'0'#0#0#9'TSpinEdit'#15'AmpGainSpin'
-  +'Edit'#4'Left'#2#6#6'Height'#2#24#3'Top'#3#25#1#5'Width'#2'2'#11'Font.Height'
+  +'Edit'#4'Left'#2#6#6'Height'#2#22#3'Top'#3#25#1#5'Width'#2'2'#11'Font.Height'
   +#2#245#9'Font.Name'#6#4'Sans'#9'Increment'#2#2#8'MaxValue'#2#1#8'MinValue'#2
   +#255#8'OnChange'#7#21'AmpGainSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#5
   +#5'Value'#2#1#0#0#0#9'TGroupBox'#25'TestControlSignalGroupBox'#4'Left'#3#184
   +#2#6'Height'#2'`'#3'Top'#3'@'#1#5'Width'#3#0#1#7'Caption'#6#19'Test Control '
   +'Signal'#12'ClientHeight'#2'M'#11'ClientWidth'#3#252#0#5'Color'#7#9'clBtnFac'
   +'e'#11'ParentColor'#8#8'TabOrder'#2#4#0#6'TLabel'#6'Label1'#4'Left'#2#6#6'He'
-  +'ight'#2#15#3'Top'#2'+'#5'Width'#2'{'#7'Caption'#6#23'Test control signal (V'
+  +'ight'#2#15#3'Top'#2'+'#5'Width'#2'|'#7'Caption'#6#23'Test control signal (V'
   +')'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'Parent'
-  +'Font'#8#0#0#9'TCheckBox'#19'TestControlCheckBox'#4'Left'#2#6#6'Height'#2#24
-  +#3'Top'#2#10#5'Width'#3#154#0#7'Caption'#6#20'Test control signal?'#11'Font.'
+  +'Font'#8#0#0#9'TCheckBox'#19'TestControlCheckBox'#4'Left'#2#6#6'Height'#2#21
+  +#3'Top'#2#10#5'Width'#3#144#0#7'Caption'#6#20'Test control signal?'#11'Font.'
   +'Height'#2#245#9'Font.Name'#6#4'Sans'#7'OnClick'#7#24'TestControlCheckBoxCli'
   +'ck'#10'ParentFont'#8#8'TabOrder'#2#0#0#0#14'TFloatSpinEdit'#21'ControlSigna'
-  +'lSpinEdit'#4'Left'#3#142#0#6'Height'#2#24#3'Top'#2''''#5'Width'#2'B'#13'Dec'
+  +'lSpinEdit'#4'Left'#3#142#0#6'Height'#2#22#3'Top'#2''''#5'Width'#2'B'#13'Dec'
   +'imalPlaces'#2#3#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#9'Increment'#5
   +#0#216#163'p='#10#215#163#248'?'#8'MaxValue'#5#0#0#0#0#0#0#0#160#2'@'#8'MinV'
   +'alue'#5#0#0#0#0#0#0#0#160#2#192#8'OnChange'#7#27'ControlSignalSpinEditChang'
@@ -176,19 +176,19 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'TGroupBox'#21'ScanningInputGroupBox'#4'Left'#3#160#1#6'Height'#2'i'#3'Top'#3
   +'H'#2#5'Width'#3#0#1#7'Caption'#6#19'Scan Input Channels'#12'ClientHeight'#2
   +'V'#11'ClientWidth'#3#252#0#8'TabOrder'#2#5#0#6'TLabel'#7'Label10'#4'Left'#2
-  +#6#6'Height'#2#15#3'Top'#2#7#5'Width'#2'9'#7'Caption'#6#9'X channel'#11'Font'
+  +#6#6'Height'#2#15#3'Top'#2#7#5'Width'#2'8'#7'Caption'#6#9'X channel'#11'Font'
   +'.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0
-  +#6'TLabel'#7'Label11'#4'Left'#3#134#0#6'Height'#2#15#3'Top'#2#7#5'Width'#2'9'
+  +#6'TLabel'#7'Label11'#4'Left'#3#134#0#6'Height'#2#15#3'Top'#2#7#5'Width'#2'8'
   +#7'Caption'#6#9'X channel'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'P'
   +'arentColor'#8#10'ParentFont'#8#0#0#6'TLabel'#17'XChannelIndicator'#4'Left'#2
-  +#6#6'Height'#2#18#3'Top'#2'?'#5'Width'#2#14#7'Caption'#6#2'X:'#11'ParentColo'
+  +#6#6'Height'#2#18#3'Top'#2'?'#5'Width'#2#13#7'Caption'#6#2'X:'#11'ParentColo'
   +'r'#8#0#0#6'TLabel'#17'YChannelIndicator'#4'Left'#3#134#0#6'Height'#2#18#3'T'
-  +'op'#2'?'#5'Width'#2#13#7'Caption'#6#2'Y:'#11'ParentColor'#8#0#0#9'TComboBox'
-  +#16'XChannelComboBox'#4'Left'#2#6#6'Height'#2#27#3'Top'#2#23#5'Width'#2'x'#11
+  +'op'#2'?'#5'Width'#2#10#7'Caption'#6#2'Y:'#11'ParentColor'#8#0#0#9'TComboBox'
+  +#16'XChannelComboBox'#4'Left'#2#6#6'Height'#2#25#3'Top'#2#23#5'Width'#2'x'#11
   +'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#10'ItemHeight'#2#0#8'OnSelect'#7
   +#22'XChannelComboBoxSelect'#10'ParentFont'#8#8'TabOrder'#2#0#4'Text'#6#20'Ch'
   +'oose input channel'#0#0#9'TComboBox'#16'YChannelComboBox'#4'Left'#3#134#0#6
-  +'Height'#2#27#3'Top'#2#23#5'Width'#2'p'#11'Font.Height'#2#245#9'Font.Name'#6
+  +'Height'#2#25#3'Top'#2#23#5'Width'#2'p'#11'Font.Height'#2#245#9'Font.Name'#6
   +#4'Sans'#10'ItemHeight'#2#0#8'OnSelect'#7#22'YChannelComboBoxSelect'#10'Pare'
   +'ntFont'#8#8'TabOrder'#2#1#4'Text'#6#20'Choose input channel'#0#0#0#5'TMemo'
   +#5'Memo5'#4'Left'#2#16#6'Height'#2'$'#3'Top'#3'P'#3#5'Width'#3#152#2#5'Color'
@@ -196,7 +196,7 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   ,#1#6#137'For scanning mode, one can define squares centered at specific poin'
   +'ts on a cell of dimension unity, with specified dimensions and height.'#0#10
   +'ParentFont'#8#8'TabOrder'#2#6#0#0#9'TCheckBox'#20'ExternalScanCheckBox'#4'L'
-  +'eft'#3#160#1#6'Height'#2#24#3'Top'#3'@'#1#5'Width'#3#169#0#7'Caption'#6#21
+  +'eft'#3#160#1#6'Height'#2#21#3'Top'#3'@'#1#5'Width'#3#163#0#7'Caption'#6#21
   +'External scanning on?'#10'Font.Color'#7#5'clRed'#11'Font.Height'#2#243#9'Fo'
   +'nt.Name'#6#4'Sans'#10'Font.Style'#11#6'fsBold'#0#7'OnClick'#7#25'ExternalSc'
   +'anCheckBoxClick'#10'ParentFont'#8#8'TabOrder'#2#7#0#0#9'TGroupBox'#22'Array'
@@ -210,18 +210,18 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'entColor'#8#10'ParentFont'#8#0#0#6'TLabel'#6'Label6'#4'Left'#2#6#6'Height'#2
   +#15#3'Top'#2'C'#5'Width'#2'C'#7'Caption'#6#11'Height (nm)'#11'Font.Height'#2
   +#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#14'TFloat'
-  +'SpinEdit'#21'SizeofFeatureSpinEdit'#4'Left'#2'n'#6'Height'#2#24#3'Top'#2#7#5
+  +'SpinEdit'#21'SizeofFeatureSpinEdit'#4'Left'#2'n'#6'Height'#2#22#3'Top'#2#7#5
   +'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Height'#2#245#9'Font.Name'#6#4'Sa'
   +'ns'#9'Increment'#5#0#216#163'p='#10#215#163#248'?'#8'MaxValue'#5#0#0#0#0#0#0
   +#0#128#255'?'#8'MinValue'#5#0#0#0#0#0#0#0#128#255#191#8'OnChange'#7#27'Sizeo'
   +'fFeatureSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#0#5'Value'#5#0#0#0#0
   +#0#0#0#128#254'?'#0#0#14'TFloatSpinEdit'#18'CenteredAtSpinEdit'#4'Left'#2'n'
-  +#6'Height'#2#24#3'Top'#2'#'#5'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Heig'
+  +#6'Height'#2#22#3'Top'#2'#'#5'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Heig'
   +'ht'#2#245#9'Font.Name'#6#4'Sans'#9'Increment'#5#0#216#163'p='#10#215#163#248
   +'?'#8'MaxValue'#5#0#0#0#0#0#0#0#128#255'?'#8'MinValue'#5#0#0#0#0#0#0#0#128
   +#255#191#8'OnChange'#7#24'CenteredAtSpinEditChange'#10'ParentFont'#8#8'TabOr'
   +'der'#2#1#5'Value'#5#0#0#0#0#0#0#0#128#254'?'#0#0#14'TFloatSpinEdit'#14'Heig'
-  +'htSpinEdit'#4'Left'#2'n'#6'Height'#2#24#3'Top'#2'<'#5'Width'#2'J'#11'Font.H'
+  +'htSpinEdit'#4'Left'#2'n'#6'Height'#2#22#3'Top'#2'<'#5'Width'#2'J'#11'Font.H'
   +'eight'#2#245#9'Font.Name'#6#4'Sans'#9'Increment'#5#0#216#163'p='#10#215#163
   +#248'?'#8'MaxValue'#5#0#0#0#0#0#0#0#200#5'@'#8'MinValue'#5#0#0#0#0#0#0#0#160
   +#2#192#8'OnChange'#7#20'HeightSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2
@@ -231,18 +231,18 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +#3#189#0#8'TabOrder'#2#9#0#6'TLabel'#6'Label7'#4'Left'#2#4#6'Height'#2#15#3
   +'Top'#2#14#5'Width'#2'L'#7'Caption'#6#14'X position (u)'#11'Font.Height'#2
   +#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#6'TLabel'
-  +#7'Label12'#4'Left'#2#4#6'Height'#2#15#3'Top'#2'*'#5'Width'#2'K'#7'Caption'#6
+  +#7'Label12'#4'Left'#2#4#6'Height'#2#15#3'Top'#2'*'#5'Width'#2'L'#7'Caption'#6
   +#14'Y Position (u)'#11'Font.Height'#2#245#9'Font.Name'#6#4'Sans'#11'ParentCo'
   +'lor'#8#10'ParentFont'#8#0#0#6'TLabel'#11'HeightLabel'#4'Left'#2#6#6'Height'
   +#2#15#3'Top'#2'C'#5'Width'#2'G'#7'Caption'#6#12'Height (nm):'#11'Font.Height'
   +#2#245#9'Font.Name'#6#4'Sans'#11'ParentColor'#8#10'ParentFont'#8#0#0#14'TFlo'
-  +'atSpinEdit'#17'XPositionSpinEdit'#4'Left'#2'n'#6'Height'#2#24#3'Top'#2#7#5
+  +'atSpinEdit'#17'XPositionSpinEdit'#4'Left'#2'n'#6'Height'#2#22#3'Top'#2#7#5
   +'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Height'#2#245#9'Font.Name'#6#4'Sa'
   +'ns'#9'Increment'#5#0#216#163'p='#10#215#163#248'?'#8'MaxValue'#5#0#0#0#0#0#0
   +#0#128#255'?'#8'MinValue'#5#0#0#0#0#0#0#0#128#255#191#8'OnChange'#7#23'XPosi'
   +'tionSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#0#5'Value'#5#0#0#0#0#0#0
   +#0#128#255'?'#0#0#14'TFloatSpinEdit'#17'YPositionSpinEdit'#4'Left'#2'n'#6'He'
-  +'ight'#2#24#3'Top'#2'#'#5'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Height'#2
+  +'ight'#2#22#3'Top'#2'#'#5'Width'#2'J'#13'DecimalPlaces'#2#3#11'Font.Height'#2
   +#245#9'Font.Name'#6#4'Sans'#9'Increment'#5#0#216#163'p='#10#215#163#248'?'#8
   +'MaxValue'#5#0#0#0#0#0#0#0#128#255'?'#8'MinValue'#5#0#0#0#0#0#0#0#128#255#191
   +#8'OnChange'#7#23'YPositionSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#1#5
@@ -253,20 +253,20 @@ LazarusResources.Add('TTuningForkForm','FORMDATA',[
   +'abOrder'#2#10#0#0#9'TGroupBox'#11'EFMGroupBox'#4'Left'#3#184#2#6'Height'#2
   +'z'#3'Top'#3#176#1#5'Width'#3#0#1#7'Caption'#6#8'EFM Mode'#12'ClientHeight'#2
   +'g'#11'ClientWidth'#3#252#0#8'TabOrder'#2#11#0#9'TCheckBox'#11'EFMCheckBox'#4
-  +'Left'#2#6#6'Height'#2#24#3'Top'#2#7#5'Width'#3#151#0#7'Caption'#6#16'Enable'
+  +'Left'#2#6#6'Height'#2#21#3'Top'#2#7#5'Width'#3#142#0#7'Caption'#6#16'Enable'
   +' EFM Mode?'#7'OnClick'#7#16'EFMCheckBoxClick'#8'TabOrder'#2#0#0#0#14'TFloat'
-  +'SpinEdit'#17'TipRadiusSpinEdit'#4'Left'#3#142#0#6'Height'#2#24#3'Top'#2#31#5
+  +'SpinEdit'#17'TipRadiusSpinEdit'#4'Left'#3#142#0#6'Height'#2#22#3'Top'#2#31#5
   +'Width'#2'B'#11'Font.Height'#2#245#9'Increment'#5#0#0#0#0#0#0#0#128#255'?'#8
   ,'MaxValue'#5#0#0#0#0#0#0#0#200#5'@'#8'MinValue'#5#0#0#0#0#0#0#0#128#255'?'#8
   +'OnChange'#7#23'TipRadiusSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#1#5
   +'Value'#5#0#0#0#0#0#0#0#128#255'?'#0#0#14'TFloatSpinEdit'#18'TipVoltageSpinE'
-  +'dit'#4'Left'#3#142#0#6'Height'#2#24#3'Top'#2'C'#5'Width'#2'B'#11'Font.Heigh'
+  +'dit'#4'Left'#3#142#0#6'Height'#2#22#3'Top'#2'C'#5'Width'#2'B'#11'Font.Heigh'
   +'t'#2#245#9'Increment'#5#0#208#204#204#204#204#204#204#251'?'#8'MaxValue'#5#0
   +#0#0#0#0#0#0#160#2'@'#8'MinValue'#5#0#0#0#0#0#0#0#160#2#192#8'OnChange'#7#24
   +'TipVoltageSpinEditChange'#10'ParentFont'#8#8'TabOrder'#2#2#5'Value'#5#0#0#0
   +#0#0#0#0#0#0#0#0#0#6'TLabel'#6'Label4'#4'Left'#2#6#6'Height'#2#18#3'Top'#2'#'
-  +#5'Width'#2'e'#7'Caption'#6#15'Tip radius (nm)'#11'ParentColor'#8#0#0#6'TLab'
-  +'el'#7'Label13'#4'Left'#2#6#6'Height'#2#18#3'Top'#2'G'#5'Width'#2'd'#7'Capti'
+  +#5'Width'#2'a'#7'Caption'#6#15'Tip radius (nm)'#11'ParentColor'#8#0#0#6'TLab'
+  +'el'#7'Label13'#4'Left'#2#6#6'Height'#2#18#3'Top'#2'G'#5'Width'#2'^'#7'Capti'
   +'on'#6#15'Tip Voltage (V)'#11'ParentColor'#8#0#0#0#10'TEpikTimer'#9'FastTime'
   +'r'#15'StringPrecision'#2#6#16'WantMilliseconds'#9#8'WantDays'#9#14'Timebase'
   +'Source'#7#14'SystemTimebase'#15'CorrelationMode'#7#16'OnTimebaseSelect'#4'l'
